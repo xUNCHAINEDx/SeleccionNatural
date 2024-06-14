@@ -33,7 +33,6 @@ flat = true
 position = Vector2( -1.78814e-07, 1.19209e-07 )
 scale = Vector2( 0.13912, 0.121991 )
 frames = SubResource( 1 )
-frame = 2
 playing = true
 
 [node name="Area2D" type="Area2D" parent="."]

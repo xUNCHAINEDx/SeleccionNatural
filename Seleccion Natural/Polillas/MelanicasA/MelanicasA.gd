@@ -8,7 +8,7 @@ var speed = 50
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	randomize()
-	velocity = Vector2(rand_range(-1.0, 1.0), rand_range(-1.0, 1.0)).normalized() * speed
+	#velocity = Vector2(rand_range(-1.0, 1.0), rand_range(-1.0, 1.0)).normalized() * speed //Hacemos que las polillas no se muevan
 
 func _process(delta):
 	position += velocity * delta
