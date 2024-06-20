@@ -11,15 +11,11 @@ script = ExtResource( 3 )
 position = Vector2( 512, 512 )
 texture = ExtResource( 4 )
 
-[node name="Container" type="Container" parent="."]
-margin_right = 1024.0
-margin_bottom = 1048.0
-
 [node name="Timer" type="Timer" parent="."]
 autostart = true
 
 [node name="MarginContainer" parent="." instance=ExtResource( 5 )]
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+[node name="ParallaxBackground" type="ParallaxBackground" parent="MarginContainer"]
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

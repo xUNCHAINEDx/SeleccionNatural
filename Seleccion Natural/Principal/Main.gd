@@ -6,3 +6,6 @@ func _on_Salir_button_down():
 
 func _on_Jugar_button_down():
 	get_tree().change_scene("res://main/MundoA.tscn")
+	
+func _ready():
+	OS.center_window()
