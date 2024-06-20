@@ -4,21 +4,10 @@ var claras = 0
 
 signal ConteoClaras
 
-var velocity = Vector2()
-var speed = 50
 
 func _ready():
 	randomize()
-	#velocity = Vector2(rand_range(-1.0, 1.0), rand_range(-1.0, 1.0)).normalized() * speed //Hacemos que las polillas no se muevan
 
-func _process(delta):
-	# Mueve la polilla
-	position += velocity * delta
-	
-	if position.x < 0 or position.x > get_viewport().size.x:
-		velocity.x = -velocity.x
-	if position.y < 0 or position.y > get_viewport().size.y:
-		velocity.y = -velocity.y
 
 func _on_Button_pressed():
 	claras += 1
