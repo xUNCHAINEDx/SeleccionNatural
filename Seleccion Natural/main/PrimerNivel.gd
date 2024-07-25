@@ -9,7 +9,7 @@ var nivel = 1
 var max_niveles = 3
 
 #DELIMITACIÓN DEL NIVEL DE JUEGO
-var tiempo_por_nivel = 20
+var tiempo_por_nivel = 5
 var time_mundo = tiempo_por_nivel
 
 #DEFINICIÓN DEL TAMAÑO DE PANTALLA
@@ -103,13 +103,18 @@ func pos_unica():
 func _on_Timer_timeout():
 	time_mundo -= 1 #Vamos restando de 1 segundo el tiempo establecido (cuenta regresiva)
 	get_node("MarginContainer/VBoxContainer/Tiempo").text = "Tiempo: " + str(time_mundo)
-	if time_mundo <= 0:
+	get_node("MarginContainer/VBoxContainer2/Nivel").text = "Nivel: 1"
+	if time_mundo == 0:
 		"""
 		En un principio aquí usabamos a función:
 		get_tree().quit()
 		Pero ahora en esta sección se avanzara al siguiente nivel
 		"""
-		get_tree().quit()
+		cambio_escena()
+		
+		
+func cambio_escena():
+	get_tree().change_scene("res://NivelDos/NivelDos.tscn")
 		
 
 func _on_ClarasA_pressed():
