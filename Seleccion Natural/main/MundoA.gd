@@ -3,7 +3,7 @@ extends Node2D
 var claras = 0
 var melanicas = 0
 var nivel = 1
-var max_niveles = 3
+var max_niveles = 10
 var tiempo_por_nivel = 10
 var time_mundo = tiempo_por_nivel
 
@@ -13,8 +13,8 @@ var rect_margin = 5
 
 var num_polillas_claras = 10
 var num_polillas_melanicas = 10
-var incremento_polillas = 2  # Incremento por nivel
-var min_polillas = 2  # Número mínimo de polillas de cada tipo
+var incremento_polillas = 2  #Incremento por nivel
+var min_polillas = 2  #Número mínimo de polillas de cada tipo
 
 onready var ClarasA = preload("res://Polillas/Claras/ClarasA.tscn")
 onready var MelanicasA = preload("res://Polillas/MelanicasA/MelanicasA.tscn")
@@ -22,6 +22,7 @@ onready var MelanicasA = preload("res://Polillas/MelanicasA/MelanicasA.tscn")
 # Define los límites del área de generación asi ya no salen fuera del area
 var min_x = 100
 var max_x = 950
+
 var min_y = 100
 var max_y = 950
 
