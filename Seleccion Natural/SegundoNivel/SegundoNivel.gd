@@ -102,8 +102,8 @@ func pos_unica():
 			
 func _on_Timer_timeout():
 	time_mundo -= 1 #Vamos restando de 1 segundo el tiempo establecido (cuenta regresiva)
-	#get_node("MarginContainer/VBoxContainer3/Tiempo").text = "Tiempo: " + str(time_mundo)
-	#get_node("MarginContainer/VBoxContainer4/Nivel").text = "Nivel: 2"
+	get_node("MarginContainer/VBoxContainer/Tiempo").text = "Tiempo: " + str(time_mundo)
+	get_node("MarginContainer/VBoxContainer2/Nivel").text = "Nivel: 2"
 	if time_mundo == 0:
 		"""
 		En un principio aquí usabamos a función:

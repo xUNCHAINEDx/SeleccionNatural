@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg-84a01a6875155caa099feefb4eb0cdc8.stex"
+path="res://.import/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg-d1db7c3b99d0aed88fc47d2347356c2b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://main/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg"
-dest_files=[ "res://.import/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg-84a01a6875155caa099feefb4eb0cdc8.stex" ]
+source_file="res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg"
+dest_files=[ "res://.import/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg-d1db7c3b99d0aed88fc47d2347356c2b.stex" ]
 
 [params]
 

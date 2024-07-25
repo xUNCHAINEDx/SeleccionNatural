@@ -9,7 +9,7 @@ var nivel = 1
 var max_niveles = 3
 
 #DELIMITACIÓN DEL NIVEL DE JUEGO
-var tiempo_por_nivel = 5
+var tiempo_por_nivel = 10
 var time_mundo = tiempo_por_nivel
 
 #DEFINICIÓN DEL TAMAÑO DE PANTALLA
@@ -114,7 +114,7 @@ func _on_Timer_timeout():
 		
 		
 func cambio_escena():
-	get_tree().change_scene("res://NivelDos/NivelDos.tscn")
+	get_tree().change_scene("res://SegundoNivel/SegundoNivel.tscn")
 		
 
 func _on_ClarasA_pressed():
