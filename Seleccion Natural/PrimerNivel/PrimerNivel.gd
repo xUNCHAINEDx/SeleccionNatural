@@ -39,6 +39,9 @@ var max_y = 950
 # Variable para almacenar las posiciones ocupadas y evitar que se encimen en la generacion
 var pos_ocupada = []
 
+# Variable para generar numeros aleatorios para el ritmo de la animacion
+var rng = RandomNumberGenerator.new()
+
 #Despliegue de la pantalla inicial
 func _ready():
 	OS.center_window()
@@ -77,13 +80,24 @@ func generate_polillas(polilla_scene, num_polillas):
 		var polilla_new = polilla_scene.instance()
 		add_child(polilla_new)
 		
+		
 		var pos_rand = pos_unica()
 		polilla_new.position = pos_rand
 		
 		# Almacenar la posición ocupada
 		pos_ocupada.append(pos_rand)
-		#ver posicion
-		#print("Polilla generada en posición: ", pos_rand)
+		
+		if polilla_new.has_node("AnimatedSprite"):
+			var animated_sprite = polilla_new.get_node("AnimatedSprite")
+			animated_sprite.play("default") # Asegúrate de poner el nombre de tu animación aquí
+			rng.randomize()
+			
+			# Cambia la velocidad de la animación
+			animated_sprite.speed_scale = rng.randf_range(0.5, 1.5)
+			
+			# Empieza la animación desde un punto aleatorio
+			var animation_length = animated_sprite.frames.get_frame_count("default")
+			animated_sprite.frame = randi() % animation_length
 
 # Función para obtener una posición aleatoria única
 func pos_unica():
