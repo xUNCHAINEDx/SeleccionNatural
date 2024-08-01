@@ -12,7 +12,6 @@ config_version=4
 
 config/name="Seeccion Natural"
 run/main_scene="res://Principal/Main.tscn"
-config/icon="res://icon.png"
 
 [display]
 
