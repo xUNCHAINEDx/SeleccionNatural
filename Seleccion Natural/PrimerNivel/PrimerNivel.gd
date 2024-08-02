@@ -54,6 +54,7 @@ func iniciar_nivel():
 		get_tree().quit()
 		return
 	# Obtener el tamaño del viewport correctamente
+# warning-ignore:unused_variable
 	var viewport_size = get_viewport().size
 	randomize()	
 	# Limpiar las posiciones ocupadas antes de generar nuevas polillas
@@ -76,6 +77,7 @@ func iniciar_nivel():
 
 #Función que lleva el control de la generación de las polillas
 func generate_polillas(polilla_scene, num_polillas):
+# warning-ignore:unused_variable
 	for j in range(num_polillas):
 		var polilla_new = polilla_scene.instance()
 		add_child(polilla_new)
@@ -128,6 +130,7 @@ func _on_Timer_timeout():
 		
 		
 func cambio_escena():
+# warning-ignore:return_value_discarded
 	get_tree().change_scene("res://SegundoNivel/SegundoNivel.tscn")
 		
 
