@@ -42,6 +42,9 @@ var pos_ocupada = []
 # Variable para generar numeros aleatorios para el ritmo de la animacion
 var rng = RandomNumberGenerator.new()
 
+# Señal emtida al manejador de escenas para el cambio de nivel
+signal segundoNivel
+
 #Despliegue de la pantalla inicial
 func _ready():
 	OS.center_window()
@@ -126,9 +129,10 @@ func _on_Timer_timeout():
 		get_tree().quit()
 		Pero ahora en esta sección se avanzara al siguiente nivel
 		"""
-		cambio_escena()
-		
-		
+		emit_signal("segundoNivel")
+		print("bandera")
+
+
 func cambio_escena():
 # warning-ignore:return_value_discarded
 	get_tree().change_scene("res://SegundoNivel/SegundoNivel.tscn")

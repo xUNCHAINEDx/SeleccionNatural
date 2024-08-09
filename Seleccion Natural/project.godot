@@ -10,8 +10,8 @@ config_version=4
 
 [application]
 
-config/name="Seeccion Natural"
-run/main_scene="res://Principal/Main.tscn"
+config/name="Seleccion Natural"
+run/main_scene="res://ManejadorEscenas/ManejadorEscenas.tscn"
 
 [display]
 

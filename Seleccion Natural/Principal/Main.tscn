@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://Principal/Main.gd" type="Script" id=1]
-[ext_resource path="res://Transicion/Transicion.tscn" type="PackedScene" id=2]
 
 [node name="Main" type="Node2D"]
 script = ExtResource( 1 )
@@ -28,9 +27,5 @@ __meta__ = {
 "_editor_description_": ""
 }
 
-[node name="Transicion" parent="." instance=ExtResource( 2 )]
-
 [connection signal="button_down" from="Salir" to="." method="_on_Salir_button_down"]
 [connection signal="button_down" from="Jugar" to="." method="_on_Jugar_button_down"]
-[connection signal="button_down" from="Jugar" to="Jugar" method="_on_Salir_button_down"]
-[connection signal="transicion" from="Transicion" to="." method="_on_Transicion_transicion"]
