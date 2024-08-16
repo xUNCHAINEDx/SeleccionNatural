@@ -13,6 +13,10 @@ config_version=4
 config/name="Seleccion Natural"
 run/main_scene="res://ManejadorEscenas/ManejadorEscenas.tscn"
 
+[autoload]
+
+Cargando="*res://pantallaDeCarga/cargando.gd"
+
 [display]
 
 window/size/width=1048
