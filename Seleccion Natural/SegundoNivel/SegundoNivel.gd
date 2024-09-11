@@ -95,7 +95,8 @@ func generate_polillas(polilla_scene, num_polillas):
 			animated_sprite.speed_scale = rng.randf_range(0.5, 1.5)
 			
 			# Empieza la animación desde un punto aleatorio
-			var animation_length = animated_sprite.frames.get_frame_count("default")
+			var sprite_frames = animated_sprite.sprite_frames
+			var animation_length = sprite_frames.get_frame_count("default")
 			animated_sprite.frame = randi() % animation_length
 
 # Función para obtener una posición aleatoria única
