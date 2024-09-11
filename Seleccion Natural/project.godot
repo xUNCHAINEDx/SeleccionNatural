@@ -17,6 +17,7 @@ config/features=PackedStringArray("4.3")
 [autoload]
 
 LoadManager="*res://ManejadorDeCarga/LoadManager.gd"
+Conteo="*res://Resultados/Conteo.gd"
 
 [display]
 
