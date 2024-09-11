@@ -25,8 +25,8 @@ var incremento_polillas = 2  #Incremento por nivel
 var min_polillas = 2  #Número mínimo de polillas de cada tipo
 
 #CARGAR LAS POLILLAS AL ESCENARIO
-onready var ClarasA = preload("res://Polillas/Claras/ClarasA.tscn")
-onready var MelanicasA = preload("res://Polillas/MelanicasA/MelanicasA.tscn")
+@onready var ClarasA = preload("res://Polillas/Claras/ClarasA.tscn")
+@onready var MelanicasA = preload("res://Polillas/MelanicasA/MelanicasA.tscn")
 #Aún falta carga un tipo de polilla
 
 # Define los límites del área de generación asi ya no salen fuera del area
@@ -44,7 +44,7 @@ var rng = RandomNumberGenerator.new()
 
 #Despliegue de la pantalla inicial
 func _ready():
-	OS.center_window()
+	#OS.center_window()
 	iniciar_nivel()
 
 #Función declarada para dar comienzo al juego (o niveles)
@@ -77,7 +77,7 @@ func iniciar_nivel():
 #Función que lleva el control de la generación de las polillas
 func generate_polillas(polilla_scene, num_polillas):
 	for j in range(num_polillas):
-		var polilla_new = polilla_scene.instance()
+		var polilla_new = polilla_scene.instantiate()
 		add_child(polilla_new)
 		
 		var pos_rand = pos_unica()
@@ -86,8 +86,8 @@ func generate_polillas(polilla_scene, num_polillas):
 		# Almacenar la posición ocupada
 		pos_ocupada.append(pos_rand)
 		
-		if polilla_new.has_node("AnimatedSprite"):
-			var animated_sprite = polilla_new.get_node("AnimatedSprite")
+		if polilla_new.has_node("AnimatedSprite2D"):
+			var animated_sprite = polilla_new.get_node("AnimatedSprite2D")
 			animated_sprite.play("default") # Asegúrate de poner el nombre de tu animación aquí
 			rng.randomize()
 			
@@ -101,7 +101,7 @@ func generate_polillas(polilla_scene, num_polillas):
 # Función para obtener una posición aleatoria única
 func pos_unica():
 	while true:
-		var pos_rand = Vector2(rand_range(min_x, max_x), rand_range(min_y, max_y))
+		var pos_rand = Vector2(randf_range(min_x, max_x), randf_range(min_y, max_y))
 		var pos_valida = true
 		
 		# Verificar si la posición generada ya está ocupada
@@ -160,6 +160,3 @@ func _draw():
 	for i in range(6):
 		draw_rect(Rect2(Vector2(100 + i * (rect_width + rect_margin), 15), Vector2(rect_width, rect_height)), Color("478cbf"))
 		draw_rect(Rect2(Vector2(100 + i * (rect_width + rect_margin), 45), Vector2(rect_width, rect_height)), Color("ff0000"))
-
-
-

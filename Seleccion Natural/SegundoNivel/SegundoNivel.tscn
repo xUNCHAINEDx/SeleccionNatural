@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Interfaz.tscn" type="PackedScene" id=1]
-[ext_resource path="res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg" type="Texture" id=2]
+[ext_resource path="res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg" type="Texture2D" id=2]
 [ext_resource path="res://SegundoNivel/SegundoNivel.gd" type="Script" id=3]
 
 [node name="Nivel2" type="Node2D"]
 script = ExtResource( 3 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2( 522, 512 )
 texture = ExtResource( 2 )
 

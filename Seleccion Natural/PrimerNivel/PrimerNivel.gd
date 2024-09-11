@@ -25,8 +25,8 @@ var incremento_polillas = 2  #Incremento por nivel
 var min_polillas = 2  #Número mínimo de polillas de cada tipo
 
 #CARGAR LAS POLILLAS AL ESCENARIO
-onready var ClarasA = preload("res://Polillas/Claras/ClarasA.tscn")
-onready var MelanicasA = preload("res://Polillas/MelanicasA/MelanicasA.tscn")
+@onready var ClarasA = preload("res://Polillas/Claras/ClarasA.tscn")
+@onready var MelanicasA = preload("res://Polillas/MelanicasA/MelanicasA.tscn")
 #Aún falta carga un tipo de polilla
 
 # Define los límites del área de generación asi ya no salen fuera del area
@@ -47,7 +47,7 @@ signal segundoNivel
 
 #Despliegue de la pantalla inicial
 func _ready():
-	OS.center_window()
+	#OS.center_window()
 	iniciar_nivel()
 
 #Función declarada para dar comienzo al juego (o niveles)
@@ -82,7 +82,7 @@ func iniciar_nivel():
 func generate_polillas(polilla_scene, num_polillas):
 # warning-ignore:unused_variable
 	for j in range(num_polillas):
-		var polilla_new = polilla_scene.instance()
+		var polilla_new = polilla_scene.instantiate()
 		add_child(polilla_new)
 		
 		
@@ -92,8 +92,8 @@ func generate_polillas(polilla_scene, num_polillas):
 		# Almacenar la posición ocupada
 		pos_ocupada.append(pos_rand)
 		
-		if polilla_new.has_node("AnimatedSprite"):
-			var animated_sprite = polilla_new.get_node("AnimatedSprite")
+		if polilla_new.has_node("AnimatedSprite2D"):
+			var animated_sprite = polilla_new.get_node("AnimatedSprite2D")
 			animated_sprite.play("default") # Asegúrate de poner el nombre de tu animación aquí
 			rng.randomize()
 			
@@ -101,13 +101,15 @@ func generate_polillas(polilla_scene, num_polillas):
 			animated_sprite.speed_scale = rng.randf_range(0.5, 1.5)
 			
 			# Empieza la animación desde un punto aleatorio
-			var animation_length = animated_sprite.frames.get_frame_count("default")
+			var sprite_frames = animated_sprite.sprite_frames
+			var animation_length = sprite_frames.get_frame_count("default")
 			animated_sprite.frame = randi() % animation_length
+
 
 # Función para obtener una posición aleatoria única
 func pos_unica():
 	while true:
-		var pos_rand = Vector2(rand_range(min_x, max_x), rand_range(min_y, max_y))
+		var pos_rand = Vector2(randf_range(min_x, max_x), randf_range(min_y, max_y))
 		var pos_valida = true
 		
 		# Verificar si la posición generada ya está ocupada
@@ -135,7 +137,7 @@ func _on_Timer_timeout():
 
 func cambio_escena():
 # warning-ignore:return_value_discarded
-	get_tree().change_scene("res://SegundoNivel/SegundoNivel.tscn")
+	get_tree().change_scene_to_file("res://SegundoNivel/SegundoNivel.tscn")
 		
 
 func _on_ClarasA_pressed():
