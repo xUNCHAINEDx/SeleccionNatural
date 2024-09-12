@@ -9,7 +9,7 @@ var nivel = 1
 var max_niveles = 3
 
 #DELIMITACIÓN DEL NIVEL DE JUEGO
-var tiempo_por_nivel = 5
+var tiempo_por_nivel = 10
 var time_mundo = tiempo_por_nivel
 
 #DEFINICIÓN DEL TAMAÑO DE PANTALLA
