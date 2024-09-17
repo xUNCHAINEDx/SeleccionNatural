@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cn0ve6goa76ak"]
 
-[ext_resource type="PackedScene" path="res://Interfaz.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://1tkcstjjxi6b" path="res://Interfaz.tscn" id="1"]
 [ext_resource type="Script" path="res://PrimerNivel/PrimerNivel.gd" id="2"]
 [ext_resource type="Texture2D" uid="uid://o3usj6ypcra4" path="res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg" id="3"]
 

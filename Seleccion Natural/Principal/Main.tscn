@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://g11hpx02qrbu"]
+[gd_scene load_steps=3 format=3 uid="uid://g11hpx02qrbu"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1"]
+[ext_resource type="FontFile" uid="uid://bkmpdefn6lrym" path="res://Assets/Fronts/Kenney Blocks.ttf" id="2_spdpy"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1")
@@ -11,6 +12,8 @@ offset_top = 530.0
 offset_right = 740.0
 offset_bottom = 667.0
 pivot_offset = Vector2(-605, -391)
+theme_override_fonts/font = ExtResource("2_spdpy")
+theme_override_font_sizes/font_size = 50
 text = "Salir"
 
 [node name="Jugar" type="Button" parent="."]
@@ -19,6 +22,8 @@ offset_top = 284.0
 offset_right = 741.0
 offset_bottom = 421.0
 pivot_offset = Vector2(-605, -391)
+theme_override_fonts/font = ExtResource("2_spdpy")
+theme_override_font_sizes/font_size = 50
 text = "Jugar"
 
 [connection signal="button_down" from="Salir" to="." method="_on_Salir_button_down"]
