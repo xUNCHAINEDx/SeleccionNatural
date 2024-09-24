@@ -1,6 +1,5 @@
 extends Node2D
 
-
 func _on_Salir_button_down():
 	get_tree().quit()
 

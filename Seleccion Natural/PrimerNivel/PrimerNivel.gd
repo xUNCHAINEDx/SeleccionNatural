@@ -55,7 +55,7 @@ func iniciar_nivel():
 		return
 	# Obtener el tamaño del viewport correctamente
 # warning-ignore:unused_variable
-	var viewport_size = get_viewport().size
+	var _viewport_size = get_viewport().size
 	randomize()	
 	# Limpiar las posiciones ocupadas antes de generar nuevas polillas
 	pos_ocupada.clear()
