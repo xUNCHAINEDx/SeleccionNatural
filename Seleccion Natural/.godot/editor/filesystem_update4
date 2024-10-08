@@ -1,11 +1,6 @@
+res://graficas.gd
 res://default_env.tres
 res://Principal/Main.tscn
 res://pantallaDeCarga/loading_screen.tscn
 res://PrimerNivel/PrimerNivel.tscn
-res://Resultados/pantalla_graficas.tscn
 res://SegundoNivel/SegundoNivel.tscn
-res://PrimerNivel/PrimerNivel.gd
-res://graficas.gd
-res://Resultados/pantalla_graficas.gd
-res://Resultados/Conteo.gd
-res://ManejadorDeCarga/LoadManager.gd

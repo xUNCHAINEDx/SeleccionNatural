@@ -1,102 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1727211892
-default_env.tres::Environment::474814481240034724::1727211892::0::1::::<><>::
-graficas.gd::GDScript::-1::1727211887::0::1::::<>Node2D<>::
+::res://::1728411458
+default_env.tres::Environment::474814481240034724::1727983387::0::1::::<><>::
+graficas.gd::GDScript::-1::1727213452::0::1::::<>Node2D<>::
 Interfaz.tscn::PackedScene::-1::1726171647::0::1::::<><>::
 Main.gd::GDScript::-1::1727207656::0::1::::<>Node2D<>::
 ::res://Assets/::1726171688
 Sprite2.png::CompressedTexture2D::8656866987272073772::1726171647::1726171688::1::::<><>::
 Sprite.png::CompressedTexture2D::8900498216147008218::1726171647::1726171688::1::::<><>::
-::res://fonts/::1727210261
-overview.PNG::CompressedTexture2D::2132366439015267095::1549839739::1727210261::1::::<><>::
-::res://fonts/architect-s-daughter/::1727210260
-Architects Daughter SIL OFL Font License.txt::TextFile::-1::1549839739::0::1::::<><>::
-ArchitectsDaughter32.tres::FontFile::-1::1549839739::0::1::::<><>::res://fonts/architect-s-daughter/ArchitectsDaughter.ttf
-ArchitectsDaughter.ttf::FontFile::1828602066395770647::1549839739::1727210260::1::::<><>::
-::res://fonts/cmu-typewriter/::1727210244
-Typewriter.tres::FontFile::-1::1549839739::0::1::::<><>::res://fonts/cmu-typewriter/Typewriter/cmuntt.ttf
-::res://fonts/cmu-typewriter/Typewriter/::1727210260
-cmunit.ttf::FontFile::379802434987126855::1549839739::1727210260::1::::<><>::
-cmuntb.ttf::FontFile::2656024659961410630::1549839739::1727210260::1::::<><>::
-cmuntt.ttf::FontFile::293602267816028996::1549839739::1727210260::1::::<><>::
-cmuntx.ttf::FontFile::6650495874056564951::1549839739::1727210260::1::::<><>::
-OFL-FAQ.txt::TextFile::-1::1549839739::0::1::::<><>::
-OFL.txt::TextFile::-1::1549839739::0::1::::<><>::
-README.txt::TextFile::-1::1549839739::0::1::::<><>::
-::res://fonts/connection/::1727210260
-Connection.otf::FontFile::2817189170010535066::1549839739::1727210260::1::::<><>::
-ConnectionBold.otf::FontFile::3624239836015315040::1549839739::1727210260::1::::<><>::
-SIL Open Font License.txt::TextFile::-1::1549839739::0::1::::<><>::
-::res://fonts/connection_ii/::1727210260
-ConnectionII.otf::FontFile::571866807544461639::1549839739::1727210260::1::::<><>::
-ConnectionII.tres::FontFile::-1::1549839739::0::1::::<><>::res://fonts/connection_ii/ConnectionII.otf
-SIL Open Font License.txt::TextFile::-1::1549839739::0::1::::<><>::
-::res://fonts/droid-sans/::1727210261
-Apache License.txt::TextFile::-1::1549839739::0::1::::<><>::
-DroidSans-Bold.ttf::FontFile::6938499144462756624::1549839739::1727210261::1::::<><>::
-DroidSans.tres::FontFile::-1::1549839739::0::1::::<><>::res://fonts/droid-sans/DroidSans.ttf
-DroidSans.ttf::FontFile::4406498160176259187::1549839739::1727210261::1::::<><>::
-::res://fonts/kirifont/::1727210261
-KiriFont.otf::FontFile::6733296742913240465::1549839739::1727210261::1::::<><>::
-Kirifont.tres::FontFile::-1::1549839739::0::1::::<><>::res://fonts/kirifont/KiriFont.otf
-KiriFont.ttf::FontFile::6457448456101968401::1549839739::1727210261::1::::<><>::
-OFL.txt::TextFile::-1::1549839739::0::1::::<><>::
-::res://fonts/linux-libertine/::1727210245
-LinuxLibertine.tres::FontFile::-1::1549839739::0::1::::<><>::
-::res://fonts/linux-libertine/LinLibertine_5.3.0_2012_07_02/::1727210245
-::res://fonts/linux-libertine/LinLibertine_5.3.0_2012_07_02/LinLibertineOTF_5.3.0_2012_07_02/::1727210261
-Bugs.txt::TextFile::-1::1549839739::0::1::::<><>::
-ChangeLog.txt::TextFile::-1::1549839739::0::1::::<><>::
-GPL.txt::TextFile::-1::1549839739::0::1::::<><>::
-INSTALL.txt::TextFile::-1::1549839739::0::1::::<><>::
-LICENCE.txt::TextFile::-1::1549839739::0::1::::<><>::
-LinLibertine_DR.otf::FontFile::7799684965448870845::1549839739::1727210261::1::::<><>::
-LinLibertine_I.otf::FontFile::9096687187839820474::1549839739::1727210261::1::::<><>::
-LinLibertine_M.otf::FontFile::3613043096843142271::1549839739::1727210261::1::::<><>::
-LinLibertine_R.otf::FontFile::4465896660032592096::1549839739::1727210261::1::::<><>::
-LinLibertine_RB.otf::FontFile::7448104358587119205::1549839739::1727210261::1::::<><>::
-LinLibertine_RBI.otf::FontFile::2978774501427653562::1549839739::1727210261::1::::<><>::
-LinLibertine_RI.otf::FontFile::6805276270675647207::1549839739::1727210261::1::::<><>::
-LinLibertine_RZ.otf::FontFile::1237803530667710211::1549839739::1727210261::1::::<><>::
-LinLibertine_RZI.otf::FontFile::3575774977445635256::1549839739::1727210260::1::::<><>::
-OFL-1.1.txt::TextFile::-1::1549839739::0::1::::<><>::
-Readme-TEX.txt::TextFile::-1::1549839739::0::1::::<><>::
-ToDo.txt::TextFile::-1::1549839739::0::1::::<><>::
-::res://fonts/montreal/::1727210260
-Montreal-Bold.ttf::FontFile::2265949304914016095::1549839739::1727210260::1::::<><>::
-Montreal-Regular.ttf::FontFile::6624867671917733946::1549839739::1727210260::1::::<><>::
-Montreal.tres::FontFile::-1::1549839739::0::1::::<><>::res://fonts/montreal/Montreal-Regular.ttf
-OFL.txt::TextFile::-1::1549839739::0::1::::<><>::
-::res://fonts/poco/::1727210260
-CC BY 4.0.txt::TextFile::-1::1549839739::0::1::::<><>::
-Poco.tres::FontFile::-1::1549839739::0::1::::<><>::res://fonts/poco/Poco.ttf
-Poco.ttf::FontFile::5319321604250678738::1549839739::1727210260::1::::<><>::
-::res://fonts/source-code-pro/::1727210245
-SourceCodePro.tres::FontFile::-1::1549839739::0::1::::<><>::res://fonts/source-code-pro/source-code-pro-2.010R-ro-1.030R-it/TTF/SourceCodePro-Regular.ttf
-::res://fonts/source-code-pro/source-code-pro-2.010R-ro-1.030R-it/::1727210245
-LICENSE.txt::TextFile::-1::1549839739::0::1::::<><>::
-::res://fonts/source-code-pro/source-code-pro-2.010R-ro-1.030R-it/TTF/::1727210260
-SourceCodePro-Black.ttf::FontFile::7504110023195216196::1549839739::1727210260::1::::<><>::
-SourceCodePro-BlackIt.ttf::FontFile::3918871378438179726::1549839739::1727210260::1::::<><>::
-SourceCodePro-Bold.ttf::FontFile::99096328392161233::1549839739::1727210260::1::::<><>::
-SourceCodePro-BoldIt.ttf::FontFile::6290223091065411111::1549839739::1727210260::1::::<><>::
-SourceCodePro-ExtraLight.ttf::FontFile::3792586640263210341::1549839739::1727210260::1::::<><>::
-SourceCodePro-ExtraLightIt.ttf::FontFile::8326586854445603774::1549839739::1727210260::1::::<><>::
-SourceCodePro-It.ttf::FontFile::8987382904125389836::1549839739::1727210260::1::::<><>::
-SourceCodePro-Light.ttf::FontFile::4686654427606915432::1549839739::1727210260::1::::<><>::
-SourceCodePro-LightIt.ttf::FontFile::2734049896013808614::1549839739::1727210260::1::::<><>::
-SourceCodePro-Medium.ttf::FontFile::5434513812688490460::1549839739::1727210260::1::::<><>::
-SourceCodePro-MediumIt.ttf::FontFile::3490759439953381951::1549839739::1727210260::1::::<><>::
-SourceCodePro-Regular.ttf::FontFile::1391633400152164461::1549839739::1727210260::1::::<><>::
-SourceCodePro-Semibold.ttf::FontFile::8115561468334101709::1549839739::1727210260::1::::<><>::
-SourceCodePro-SemiboldIt.ttf::FontFile::8537431068138208247::1549839739::1727210260::1::::<><>::
-::res://fonts/xolonium/::1727210245
-Xolonium.tres::FontFile::-1::1549839739::0::1::::<><>::res://fonts/xolonium/xolonium-fonts-4.1/ttf/Xolonium-Regular.ttf
-::res://fonts/xolonium/xolonium-fonts-4.1/::1727210245
-FONTLOG.txt::TextFile::-1::1549839739::0::1::::<><>::
-LICENSE.txt::TextFile::-1::1549839739::0::1::::<><>::
-::res://fonts/xolonium/xolonium-fonts-4.1/ttf/::1727212101
-Xolonium-Bold.ttf::FontFile::5022917889533731638::1549839739::1727210260::1::::<><>::
 ::res://Jugador/::1726171687
 Imagen de WhatsApp 2024-02-09 a las 15.29.46_5cf7e801.jpg::CompressedTexture2D::8861355078722301117::1726171647::1726171686::1::::<><>::
 p1.png::CompressedTexture2D::7744009956766014124::1726171647::1726171686::1::::<><>::
@@ -107,9 +17,9 @@ T2.png::CompressedTexture2D::3431075355168614000::1726171647::1726171687::1::::<
 T3.png::CompressedTexture2D::6493227638604948::1726171647::1726171687::1::::<><>::
 ::res://ManejadorDeCarga/::1726171647
 LoadManager.gd::GDScript::-1::1726171647::0::1::::<>Node<>::
-::res://pantallaDeCarga/::1727211892
+::res://pantallaDeCarga/::1727983387
 loading_screen.gd::GDScript::-1::1726171647::0::1::::<>CanvasLayer<>::
-loading_screen.tscn::PackedScene::5626698389953482110::1727211892::0::1::::<><>::res://pantallaDeCarga/loading_screen.gd<>uid://o3usj6ypcra4::::res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg
+loading_screen.tscn::PackedScene::5626698389953482110::1727983387::0::1::::<><>::res://pantallaDeCarga/loading_screen.gd<>uid://o3usj6ypcra4::::res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg
 ::res://Polillas/::1726171647
 ::res://Polillas/Claras/::1726171647
 ClarasA.gd::GDScript::-1::1726171647::0::1::::<>Node2D<>::
@@ -117,18 +27,18 @@ ClarasA.tscn::PackedScene::7874811855175036681::1726171647::0::1::::<><>::uid://
 ::res://Polillas/MelanicasA/::1726171647
 MelanicasA.gd::GDScript::-1::1726171647::0::1::::<>Node2D<>::
 MelanicasA.tscn::PackedScene::-1::1726171647::0::1::::<><>::res://Jugador/T1.png<>res://Jugador/T2.png<>res://Jugador/T3.png<>res://Polillas/MelanicasA/MelanicasA.gd
-::res://PrimerNivel/::1727211892
+::res://PrimerNivel/::1727983387
 Control.tscn::PackedScene::-1::1726171647::0::1::::<><>::
 Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg::CompressedTexture2D::1041693393901426209::1726171647::1726171687::1::::<><>::
-PrimerNivel.gd::GDScript::-1::1726171647::0::1::::<>Node2D<>::
-PrimerNivel.tscn::PackedScene::5738189616685903302::1727211892::0::1::::<><>::res://Interfaz.tscn<>res://PrimerNivel/PrimerNivel.gd<>uid://o3usj6ypcra4::::res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg
-::res://Principal/::1727211892
-Main.tscn::PackedScene::476398850356379786::1727211891::0::1::::<><>::res://Main.gd
-::res://Resultados/::1727212101
+PrimerNivel.gd::GDScript::-1::1727212960::0::1::::<>Node2D<>::
+PrimerNivel.tscn::PackedScene::5738189616685903302::1727983387::0::1::::<><>::res://Interfaz.tscn<>res://PrimerNivel/PrimerNivel.gd<>uid://o3usj6ypcra4::::res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg
+::res://Principal/::1727983386
+Main.tscn::PackedScene::476398850356379786::1727983386::0::1::::<><>::res://Main.gd
+::res://Resultados/::1727212150
 Conteo.gd::GDScript::-1::1726171647::0::1::::<>Node<>::
 pantalla_graficas.gd::GDScript::-1::1726171647::0::1::::<>Window<>::
 pantalla_graficas.tscn::PackedScene::4023628364365508547::1727211892::0::1::::<><>::res://graficas.gd<>res://Resultados/pantalla_graficas.gd
 Xolonium-Regular.ttf::FontFile::4425934300817370003::1549839739::1727212150::1::::<><>::
-::res://SegundoNivel/::1727211892
+::res://SegundoNivel/::1727983387
 SegundoNivel.gd::GDScript::-1::1726173045::0::1::::<>Node2D<>::
-SegundoNivel.tscn::PackedScene::6589557127585591266::1727211892::0::1::::<><>::res://Interfaz.tscn<>uid://o3usj6ypcra4::::res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg<>res://SegundoNivel/SegundoNivel.gd
+SegundoNivel.tscn::PackedScene::6589557127585591266::1727983387::0::1::::<><>::res://Interfaz.tscn<>uid://o3usj6ypcra4::::res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg<>res://SegundoNivel/SegundoNivel.gd
