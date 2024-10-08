@@ -1,6 +1,7 @@
-res://graficas.gd
 res://default_env.tres
 res://Principal/Main.tscn
 res://pantallaDeCarga/loading_screen.tscn
 res://PrimerNivel/PrimerNivel.tscn
 res://SegundoNivel/SegundoNivel.tscn
+res://Polillas/MelanicasA/MelanicasA.tscn
+res://graficas.gd

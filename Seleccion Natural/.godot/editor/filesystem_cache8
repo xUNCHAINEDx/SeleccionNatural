@@ -1,6 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1728411458
-default_env.tres::Environment::474814481240034724::1727983387::0::1::::<><>::
+::res://::1728414219
+default_env.tres::Environment::474814481240034724::1728414108::0::1::::<><>::
 graficas.gd::GDScript::-1::1727213452::0::1::::<>Node2D<>::
 Interfaz.tscn::PackedScene::-1::1726171647::0::1::::<><>::
 Main.gd::GDScript::-1::1727207656::0::1::::<>Node2D<>::
@@ -12,33 +12,33 @@ Imagen de WhatsApp 2024-02-09 a las 15.29.46_5cf7e801.jpg::CompressedTexture2D::
 p1.png::CompressedTexture2D::7744009956766014124::1726171647::1726171686::1::::<><>::
 p2.png::CompressedTexture2D::4812146152193698928::1726171647::1726171686::1::::<><>::
 P3.png::CompressedTexture2D::5988745456346950646::1726171647::1726171686::1::::<><>::
-T1.png::CompressedTexture2D::3952647936024927965::1726171647::1726171687::1::::<><>::
-T2.png::CompressedTexture2D::3431075355168614000::1726171647::1726171687::1::::<><>::
-T3.png::CompressedTexture2D::6493227638604948::1726171647::1726171687::1::::<><>::
+T1.png::CompressedTexture2D::3895341741476478272::1717621619::1728414361::1::::<><>::
+T2.png::CompressedTexture2D::3371191795929530600::1717621619::1728414361::1::::<><>::
+T3.png::CompressedTexture2D::672902882315960751::1717621619::1728414361::1::::<><>::
 ::res://ManejadorDeCarga/::1726171647
 LoadManager.gd::GDScript::-1::1726171647::0::1::::<>Node<>::
-::res://pantallaDeCarga/::1727983387
+::res://pantallaDeCarga/::1728414107
 loading_screen.gd::GDScript::-1::1726171647::0::1::::<>CanvasLayer<>::
-loading_screen.tscn::PackedScene::5626698389953482110::1727983387::0::1::::<><>::res://pantallaDeCarga/loading_screen.gd<>uid://o3usj6ypcra4::::res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg
+loading_screen.tscn::PackedScene::5626698389953482110::1728414107::0::1::::<><>::res://pantallaDeCarga/loading_screen.gd<>uid://o3usj6ypcra4::::res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg
 ::res://Polillas/::1726171647
-::res://Polillas/Claras/::1726171647
+::res://Polillas/Claras/::1728414204
 ClarasA.gd::GDScript::-1::1726171647::0::1::::<>Node2D<>::
-ClarasA.tscn::PackedScene::7874811855175036681::1726171647::0::1::::<><>::uid://diliyh0agjkme::::res://Jugador/p1.png<>uid://catblx0ce7cx1::::res://Jugador/p2.png<>uid://crk806xevnlco::::res://Jugador/P3.png<>res://Polillas/Claras/ClarasA.gd
-::res://Polillas/MelanicasA/::1726171647
+ClarasA.tscn::PackedScene::7874811855175036681::1728414204::0::1::::<><>::uid://diliyh0agjkme::::res://Jugador/p1.png<>uid://catblx0ce7cx1::::res://Jugador/p2.png<>uid://crk806xevnlco::::res://Jugador/P3.png<>res://Polillas/Claras/ClarasA.gd
+::res://Polillas/MelanicasA/::1728414204
 MelanicasA.gd::GDScript::-1::1726171647::0::1::::<>Node2D<>::
-MelanicasA.tscn::PackedScene::-1::1726171647::0::1::::<><>::res://Jugador/T1.png<>res://Jugador/T2.png<>res://Jugador/T3.png<>res://Polillas/MelanicasA/MelanicasA.gd
-::res://PrimerNivel/::1727983387
+MelanicasA.tscn::PackedScene::-1::1728414204::0::1::::<><>::res://Jugador/T1.png<>res://Jugador/T2.png<>res://Jugador/T3.png<>res://Polillas/MelanicasA/MelanicasA.gd
+::res://PrimerNivel/::1728414107
 Control.tscn::PackedScene::-1::1726171647::0::1::::<><>::
 Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg::CompressedTexture2D::1041693393901426209::1726171647::1726171687::1::::<><>::
 PrimerNivel.gd::GDScript::-1::1727212960::0::1::::<>Node2D<>::
-PrimerNivel.tscn::PackedScene::5738189616685903302::1727983387::0::1::::<><>::res://Interfaz.tscn<>res://PrimerNivel/PrimerNivel.gd<>uid://o3usj6ypcra4::::res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg
-::res://Principal/::1727983386
-Main.tscn::PackedScene::476398850356379786::1727983386::0::1::::<><>::res://Main.gd
+PrimerNivel.tscn::PackedScene::5738189616685903302::1728414107::0::1::::<><>::res://Interfaz.tscn<>res://PrimerNivel/PrimerNivel.gd<>uid://o3usj6ypcra4::::res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg
+::res://Principal/::1728414107
+Main.tscn::PackedScene::476398850356379786::1728414107::0::1::::<><>::res://Main.gd
 ::res://Resultados/::1727212150
 Conteo.gd::GDScript::-1::1726171647::0::1::::<>Node<>::
 pantalla_graficas.gd::GDScript::-1::1726171647::0::1::::<>Window<>::
 pantalla_graficas.tscn::PackedScene::4023628364365508547::1727211892::0::1::::<><>::res://graficas.gd<>res://Resultados/pantalla_graficas.gd
 Xolonium-Regular.ttf::FontFile::4425934300817370003::1549839739::1727212150::1::::<><>::
-::res://SegundoNivel/::1727983387
+::res://SegundoNivel/::1728414107
 SegundoNivel.gd::GDScript::-1::1726173045::0::1::::<>Node2D<>::
-SegundoNivel.tscn::PackedScene::6589557127585591266::1727983387::0::1::::<><>::res://Interfaz.tscn<>uid://o3usj6ypcra4::::res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg<>res://SegundoNivel/SegundoNivel.gd
+SegundoNivel.tscn::PackedScene::6589557127585591266::1728414107::0::1::::<><>::res://Interfaz.tscn<>uid://o3usj6ypcra4::::res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg<>res://SegundoNivel/SegundoNivel.gd
