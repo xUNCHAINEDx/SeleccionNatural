@@ -1,13 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1726595956
-default_env.tres::Environment::474814481240034724::1726595956::0::1::::<><>::
-graficas.gd::GDScript::-1::1726164950::0::1::::<>Node2D<>::
-Interfaz.tscn::PackedScene::-1::1726164950::0::1::::<><>::
+::res://::1728517014
+default_env.tres::Environment::474814481240034724::1728517058::0::1::::<><>::
+graficas.gd::GDScript::-1::1728513535::0::1::::<>Node2D<>::
+Interfaz.tscn::PackedScene::1864744828624898791::1728513536::0::1::::<><>::uid://bkmpdefn6lrym::::res://Assets/Fronts/Kenney Blocks.ttf
 Main.gd::GDScript::-1::1726164950::0::1::::<>Node2D<>::
-::res://Assets/::1726595940
+::res://Assets/::1726595961
 Sprite2.png::CompressedTexture2D::8656866987272073772::1726164942::1726595961::1::::<><>::
 Sprite.png::CompressedTexture2D::8900498216147008218::1726164942::1726595961::1::::<><>::
-::res://Assets/Fronts/::1726595939
+::res://Assets/Fronts/::1726595960
 BungeeTint-Regular.ttf::FontFile::8485763615122046198::1723501102::1726595960::1::::<><>::
 Cute Boys.otf::FontFile::1887597954465781122::1717639378::1726595960::1::::<><>::
 Kenney Blocks.ttf::FontFile::3113997983845316264::1453242668::1726595960::1::::<><>::
@@ -16,7 +16,7 @@ SMILE KINDS.ttf::FontFile::6173776295375322697::1690866768::1726595960::1::::<><
 Super Moods.ttf::FontFile::623854424387764789::1725866720::1726595960::1::::<><>::
 Welcome Cartoon.otf::FontFile::7252629520092617203::1726135102::1726595960::1::::<><>::
 Xolonium-Bold.ttf::FontFile::6131578985981224123::1549839739::1726595960::1::::<><>::
-::res://Jugador/::1726595939
+::res://Jugador/::1726595960
 Imagen de WhatsApp 2024-02-09 a las 15.29.46_5cf7e801.jpg::CompressedTexture2D::8861355078722301117::1726164942::1726595960::1::::<><>::
 p1.png::CompressedTexture2D::7744009956766014124::1726164942::1726595960::1::::<><>::
 p2.png::CompressedTexture2D::4812146152193698928::1726164942::1726595960::1::::<><>::
@@ -26,27 +26,28 @@ T2.png::CompressedTexture2D::3431075355168614000::1726164942::1726595960::1::::<
 T3.png::CompressedTexture2D::6493227638604948::1726164942::1726595960::1::::<><>::
 ::res://ManejadorDeCarga/::1726164950
 LoadManager.gd::GDScript::-1::1726164950::0::1::::<>Node<>::
-::res://pantallaDeCarga/::1726595497
+::res://pantallaDeCarga/::1728516812
 loading_screen.gd::GDScript::-1::1726164950::0::1::::<>CanvasLayer<>::
-loading_screen.tscn::PackedScene::5626698389953482110::1726595497::0::1::::<><>::res://pantallaDeCarga/loading_screen.gd<>uid://o3usj6ypcra4::::res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg
+loading_screen.tscn::PackedScene::5626698389953482110::1728516812::0::1::::<><>::res://pantallaDeCarga/loading_screen.gd<>uid://o3usj6ypcra4::::res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg
 ::res://Polillas/::1726164942
-::res://Polillas/Claras/::1726164950
+::res://Polillas/Claras/::1727459530
 ClarasA.gd::GDScript::-1::1726164950::0::1::::<>Node2D<>::
-ClarasA.tscn::PackedScene::7874811855175036681::1726164950::0::1::::<><>::uid://diliyh0agjkme::::res://Jugador/p1.png<>uid://catblx0ce7cx1::::res://Jugador/p2.png<>uid://crk806xevnlco::::res://Jugador/P3.png<>res://Polillas/Claras/ClarasA.gd
+ClarasA.tscn::PackedScene::7874811855175036681::1727459530::0::1::::<><>::uid://diliyh0agjkme::::res://Jugador/p1.png<>uid://catblx0ce7cx1::::res://Jugador/p2.png<>uid://crk806xevnlco::::res://Jugador/P3.png<>res://Polillas/Claras/ClarasA.gd
 ::res://Polillas/MelanicasA/::1726164950
 MelanicasA.gd::GDScript::-1::1726164950::0::1::::<>Node2D<>::
 MelanicasA.tscn::PackedScene::-1::1726164950::0::1::::<><>::res://Jugador/T1.png<>res://Jugador/T2.png<>res://Jugador/T3.png<>res://Polillas/MelanicasA/MelanicasA.gd
-::res://PrimerNivel/::1726595939
+::res://PrimerNivel/::1728516812
 Control.tscn::PackedScene::-1::1726164950::0::1::::<><>::
 Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg::CompressedTexture2D::1041693393901426209::1726164950::1726595960::1::::<><>::
 PrimerNivel.gd::GDScript::-1::1726164950::0::1::::<>Node2D<>::
-PrimerNivel.tscn::PackedScene::5738189616685903302::1726595497::0::1::::<><>::res://Interfaz.tscn<>res://PrimerNivel/PrimerNivel.gd<>uid://o3usj6ypcra4::::res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg
-::res://Principal/::1726595496
-Main.tscn::PackedScene::476398850356379786::1726595496::0::1::::<><>::res://Main.gd<>uid://15mpyxhsjmf7::::res://Assets/Fronts/Cute Boys.otf
-::res://Resultados/::1726595497
+PrimerNivel.tscn::PackedScene::5738189616685903302::1728516812::0::1::::<><>::uid://1tkcstjjxi6b::::res://Interfaz.tscn<>res://PrimerNivel/PrimerNivel.gd<>uid://o3usj6ypcra4::::res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg
+::res://Principal/::1728516812
+Main.tscn::PackedScene::476398850356379786::1728516812::0::1::::<><>::res://Main.gd<>uid://bkmpdefn6lrym::::res://Assets/Fronts/Kenney Blocks.ttf
+::res://Resultados/::1728517014
 Conteo.gd::GDScript::-1::1726164950::0::1::::<>Node<>::
-pantalla_graficas.gd::GDScript::-1::1726164950::0::1::::<>Window<>::
-pantalla_graficas.tscn::PackedScene::4023628364365508547::1726595497::0::1::::<><>::res://graficas.gd<>res://Resultados/pantalla_graficas.gd
-::res://SegundoNivel/::1726595319
-SegundoNivel.gd::GDScript::-1::1726595319::0::1::::<>Node2D<>::
+PantallaGraficas.gd::GDScript::-1::1728516928::0::1::::<>Panel<>::
+PantallaGraficas.tscn::PackedScene::7474780782488336807::1728517058::0::1::::<><>::res://Resultados/PantallaGraficas.gd<>res://Resultados/prueba.gd
+prueba.gd::GDScript::-1::1728514902::0::1::::<>Node2D<>::
+::res://SegundoNivel/::1727457429
+SegundoNivel.gd::GDScript::-1::1727457429::0::1::::<>Node2D<>::
 SegundoNivel.tscn::PackedScene::-1::1726164950::0::1::::<><>::res://Interfaz.tscn<>res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg<>res://SegundoNivel/SegundoNivel.gd

@@ -1,8 +1,15 @@
 res://default_env.tres
 res://Principal/Main.tscn
+res://graficas.gd
 res://pantallaDeCarga/loading_screen.tscn
 res://PrimerNivel/PrimerNivel.tscn
 res://Resultados/pantalla_graficas.tscn
 res://Interfaz.tscn
-res://Polillas/Claras/ClarasA.tscn
-res://graficas.gd
+res://popup.tscn
+res://prueba.gd
+res://panel.tscn
+res://panel.gd
+res://Resultados/panel.tscn
+res://Resultados/Graficas.tscn
+res://Resultados/PantallaGraficas.tscn
+res://PrimerNivel/PrimerNivel.gd

@@ -133,7 +133,7 @@ func _on_Timer_timeout():
 
 func cambio_escena():
 # warning-ignore:return_value_discarded
-	LoadManager.load_scene("res://Resultados/pantalla_graficas.tscn")
+	LoadManager.load_scene("res://Resultados/PantallaGraficas.tscn")
 		
 
 func _on_ClarasA_pressed():
