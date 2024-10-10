@@ -9,7 +9,7 @@ var nivel = 1
 var max_niveles = 3
 
 #DELIMITACIÓN DEL NIVEL DE JUEGO
-var tiempo_por_nivel = 5
+var tiempo_por_nivel = 15
 var time_mundo = tiempo_por_nivel
 
 #DEFINICIÓN DEL TAMAÑO DE PANTALLA
@@ -18,7 +18,7 @@ var rect_height = 15
 var rect_margin = 5
 
 #NUMERO DE POLILLAS EXISTENTES AL INICIAR EL NIVEL
-var num_polillas_claras = 20
+var num_polillas_claras = 10
 var num_polillas_melanicas = 20
 
 var incremento_polillas = 2  #Incremento por nivel
@@ -136,7 +136,7 @@ func _on_ClarasA_pressed():
 
 func _on_MelanicasA_pressed():
 	Conteo.G_melanicas += 1
-	get_node("MarginContainer/VBoxContainer/Mel").text = "MELANICAS: " + str(melanicas)
+	get_node("MarginContainer/VBoxContainer/Mel").text = "OSCURAS: " + str(melanicas)
 
 func actualizar_polillas():
 	var claras_no_capturadas = num_polillas_claras - claras

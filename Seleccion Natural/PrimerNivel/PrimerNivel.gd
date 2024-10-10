@@ -9,7 +9,7 @@ var nivel = 1
 var max_niveles = 3
 
 #DELIMITACIÓN DEL NIVEL DE JUEGO
-var tiempo_por_nivel = 10
+var tiempo_por_nivel = 20
 var time_mundo = tiempo_por_nivel
 
 #DEFINICIÓN DEL TAMAÑO DE PANTALLA
@@ -142,7 +142,7 @@ func _on_ClarasA_pressed():
 
 func _on_MelanicasA_pressed():
 	Conteo.G_melanicas += 1
-	get_node("MarginContainer/VBoxContainer/Mel").text = "MELANICAS: " + str(Conteo.G_melanicas)
+	get_node("MarginContainer/VBoxContainer/Mel").text = "OSCURAS: " + str(Conteo.G_melanicas)
 
 func actualizar_polillas():
 	var claras_no_capturadas = num_polillas_claras - claras

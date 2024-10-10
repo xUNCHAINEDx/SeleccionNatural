@@ -80,8 +80,7 @@ offset_left = 126.0
 offset_top = 309.0
 offset_right = 206.0
 offset_bottom = 332.0
-text = "Melanicas 
-"
+text = "Claras"
 
 [node name="Label2" type="Label" parent="."]
 layout_mode = 0
