@@ -1,8 +1,8 @@
 extends Node2D
 
 #CONTADORES DE LAS POLILLAS ATRAPADAS
-var claras = 0
-var melanicas = 0
+var claras = Conteo.G_claras
+var melanicas = Conteo.G_melanicas
 
 #DELIMITACIÓN DE LOS NIVELES
 var nivel = 1
@@ -71,8 +71,6 @@ func iniciar_nivel():
 	aparezca un letrero indicando en que nivel nos encontramos.
 	"""
 	#Contador de polillas atrapadas al iniciar el nivel
-	claras = 0
-	melanicas = 0
 
 #Función que lleva el control de la generación de las polillas
 func generate_polillas(polilla_scene, num_polillas):
@@ -129,15 +127,15 @@ func _on_Timer_timeout():
 		
 		
 func cambio_escena():
-	get_tree().quit()
+	LoadManager.load_scene("res://Resultados/PantallaGraficas.tscn")
 		
 
 func _on_ClarasA_pressed():
-	claras += 1
+	Conteo.G_claras += 1
 	get_node("MarginContainer/VBoxContainer/Cla").text = "CLARAS: " + str(claras)
 
 func _on_MelanicasA_pressed():
-	melanicas += 1
+	Conteo.G_melanicas += 1
 	get_node("MarginContainer/VBoxContainer/Mel").text = "MELANICAS: " + str(melanicas)
 
 func actualizar_polillas():

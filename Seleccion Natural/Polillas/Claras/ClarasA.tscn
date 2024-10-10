@@ -9,13 +9,13 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3")
+"texture": ExtResource("1")
 }, {
 "duration": 1.0,
 "texture": ExtResource("2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("1")
+"texture": ExtResource("3")
 }],
 "loop": true,
 "name": &"default",
@@ -40,7 +40,6 @@ flat = true
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.115046, 0.107176)
 sprite_frames = SubResource("1")
-frame = 2
 
 [node name="Area2D" type="Area2D" parent="."]
 

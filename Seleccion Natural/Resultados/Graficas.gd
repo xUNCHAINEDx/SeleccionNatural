@@ -1,7 +1,7 @@
 extends Node2D
 
 # Datos para el gráfico de barras
-var data = [10, 5]
+var data = [Conteo.G_claras, Conteo.G_melanicas]
 var labels = ["Claras", "Melanicas"]
 var colors = [Color.YELLOW, Color.CORAL]
 
