@@ -49,10 +49,8 @@ func _ready():
 
 #Función declarada para dar comienzo al juego (o niveles)
 func iniciar_nivel():
-	if nivel > max_niveles:
-		#En esta sección sería bueno colocar un letrero de "You win!"
-		get_tree().quit()
-		return
+	Conteo.Claras_sobrevivientes = num_polillas_claras
+	Conteo.Melanicas_sobrevivientes = num_polillas_melanicas
 	# Obtener el tamaño del viewport correctamente
 # warning-ignore:unused_variable
 	var viewport_size = get_viewport().size
@@ -127,9 +125,8 @@ func _on_Timer_timeout():
 		get_tree().quit()
 		Pero ahora en esta sección se avanzara al siguiente nivel
 		"""
+		
 		cambio_escena()
-	
-
 
 func cambio_escena():
 # warning-ignore:return_value_discarded
@@ -138,28 +135,13 @@ func cambio_escena():
 
 func _on_ClarasA_pressed():
 	Conteo.G_claras += 1
+	Conteo.Claras_sobrevivientes -= 1
 	get_node("MarginContainer/VBoxContainer/Cla").text = "CLARAS: " + str(Conteo.G_claras)
 
 func _on_MelanicasA_pressed():
 	Conteo.G_melanicas += 1
+	Conteo.Melanicas_sobrevivientes -= 1
 	get_node("MarginContainer/VBoxContainer/Mel").text = "MELANICAS: " + str(Conteo.G_melanicas)
-
-func actualizar_polillas():
-	var claras_no_capturadas = num_polillas_claras - claras
-	var melanicas_no_capturadas = num_polillas_melanicas - melanicas
-
-	if claras_no_capturadas > 0:
-		num_polillas_claras = max(claras_no_capturadas + incremento_polillas, min_polillas)
-	else:
-		num_polillas_claras = min_polillas
-
-	if melanicas_no_capturadas > 0:
-		num_polillas_melanicas = max(melanicas_no_capturadas + incremento_polillas, min_polillas)
-	else:
-		num_polillas_melanicas = min_polillas
-
-	if nivel > 3:
-		incremento_polillas = 1
 
 func _draw():
 	for i in range(6):

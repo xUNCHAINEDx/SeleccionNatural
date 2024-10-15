@@ -3,10 +3,11 @@ res://Resultados/PantallaGraficas.tscn
 res://Principal/Main.tscn
 res://pantallaDeCarga/loading_screen.tscn
 res://PrimerNivel/PrimerNivel.tscn
-res://Resultados/Conteo.gd
-res://Resultados/PantallaGraficas.gd
-res://Polillas/Oscuras/ClarasA.tscn
-res://SegundoNivel/SegundoNivel.gd
 res://Polillas/Claras/ClarasA.tscn
-res://Resultados/Graficas.gd
 res://SegundoNivel/SegundoNivel.tscn
+res://Polillas/Oscuras/ClarasA.tscn
+res://Polillas/MelanicasA/MelanicasA.tscn
+res://Resultados/Conteo.gd
+res://PrimerNivel/PrimerNivel.gd
+res://SegundoNivel/SegundoNivel.gd
+res://Interfaz.tscn

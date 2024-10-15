@@ -59,8 +59,8 @@ func iniciar_nivel():
 	# Limpiar las posiciones ocupadas antes de generar nuevas polillas
 	pos_ocupada.clear()
 	
-	generate_polillas(ClarasA, num_polillas_claras)
-	generate_polillas(MelanicasA, num_polillas_melanicas)
+	generate_polillas(ClarasA, actualizar_polillas(Conteo.Claras_sobrevivientes))
+	generate_polillas(MelanicasA, actualizar_polillas(Conteo.Melanicas_sobrevivientes))
 	
 	#Asignar el tiemp respectivamente a cada nivel
 	time_mundo = tiempo_por_nivel
@@ -96,6 +96,16 @@ func generate_polillas(polilla_scene, num_polillas):
 			var sprite_frames = animated_sprite.sprite_frames
 			var animation_length = sprite_frames.get_frame_count("default")
 			animated_sprite.frame = randi() % animation_length
+			
+# Funcion para actualizar numero de polillas
+func actualizar_polillas(num_polillas_sobrevivientes):
+	var num_polillas_actualizadas
+	num_polillas_actualizadas = 1.25 * num_polillas_sobrevivientes
+	if (Conteo.Total_polillas > 50):
+		num_polillas_actualizadas -= 1
+		print(num_polillas_actualizadas)
+		print(Conteo.Total_polillas)
+	return num_polillas_actualizadas
 
 # Función para obtener una posición aleatoria única
 func pos_unica():
@@ -137,23 +147,6 @@ func _on_ClarasA_pressed():
 func _on_MelanicasA_pressed():
 	Conteo.G_melanicas += 1
 	get_node("MarginContainer/VBoxContainer/Mel").text = "MELANICAS: " + str(melanicas)
-
-func actualizar_polillas():
-	var claras_no_capturadas = num_polillas_claras - claras
-	var melanicas_no_capturadas = num_polillas_melanicas - melanicas
-
-	if claras_no_capturadas > 0:
-		num_polillas_claras = max(claras_no_capturadas + incremento_polillas, min_polillas)
-	else:
-		num_polillas_claras = min_polillas
-
-	if melanicas_no_capturadas > 0:
-		num_polillas_melanicas = max(melanicas_no_capturadas + incremento_polillas, min_polillas)
-	else:
-		num_polillas_melanicas = min_polillas
-
-	if nivel > 3:
-		incremento_polillas = 1
 
 func _draw():
 	for i in range(6):
