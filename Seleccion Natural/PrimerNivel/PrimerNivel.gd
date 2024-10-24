@@ -125,11 +125,10 @@ func _on_Timer_timeout():
 		get_tree().quit()
 		Pero ahora en esta sección se avanzara al siguiente nivel
 		"""
-		
 		cambio_escena()
+		
 
 func cambio_escena():
-# warning-ignore:return_value_discarded
 	LoadManager.load_scene("res://Resultados/PantallaGraficas.tscn")
 		
 
@@ -142,8 +141,3 @@ func _on_MelanicasA_pressed():
 	Conteo.G_melanicas += 1
 	Conteo.Melanicas_sobrevivientes -= 1
 	get_node("MarginContainer/VBoxContainer/Mel").text = "MELANICAS: " + str(Conteo.G_melanicas)
-
-func _draw():
-	for i in range(6):
-		draw_rect(Rect2(Vector2(100 + i * (rect_width + rect_margin), 15), Vector2(rect_width, rect_height)), Color("478cbf"))
-		draw_rect(Rect2(Vector2(100 + i * (rect_width + rect_margin), 45), Vector2(rect_width, rect_height)), Color("ff0000"))

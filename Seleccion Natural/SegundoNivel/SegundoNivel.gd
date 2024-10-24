@@ -147,8 +147,3 @@ func _on_ClarasA_pressed():
 func _on_MelanicasA_pressed():
 	Conteo.G_melanicas += 1
 	get_node("MarginContainer/VBoxContainer/Mel").text = "MELANICAS: " + str(melanicas)
-
-func _draw():
-	for i in range(6):
-		draw_rect(Rect2(Vector2(100 + i * (rect_width + rect_margin), 15), Vector2(rect_width, rect_height)), Color("478cbf"))
-		draw_rect(Rect2(Vector2(100 + i * (rect_width + rect_margin), 45), Vector2(rect_width, rect_height)), Color("ff0000"))

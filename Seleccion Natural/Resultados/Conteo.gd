@@ -6,3 +6,5 @@ var NivelActual = 0
 var Melanicas_sobrevivientes = 0
 var Claras_sobrevivientes = 0
 var Total_polillas = Melanicas_sobrevivientes + Claras_sobrevivientes 
+var Año = 1
+var Niveles_tot = 4
