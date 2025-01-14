@@ -71,7 +71,7 @@ func iniciar_nivel():
 	"""
 	#Contador de polillas atrapadas al iniciar el nivel
 
-
+#Hola
 #Función que lleva el control de la generación de las polillas
 func generate_polillas(polilla_scene, num_polillas):
 # warning-ignore:unused_variable
