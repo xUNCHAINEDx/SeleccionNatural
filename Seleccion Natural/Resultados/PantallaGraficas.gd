@@ -9,8 +9,8 @@ func _on_timer_timeout() -> void:
 	if temporizador == 0:
 		animationPlayer.play("fade_out")
 		if NivelActual == 0:
-			Conteo.NivelActual = 1
-			LoadManager.load_scene("res://SegundoNivel/SegundoNivel.tscn")
+			Conteo.NivelActual == 1
+			LoadManager.load_scene("res://PrimerNivel/PrimerNivel.tscn")
 		if NivelActual == 1:
 			Conteo.NivelActual = 2
 			print("cambio de nivel")

@@ -58,8 +58,8 @@ func iniciar_nivel():
 	# Limpiar las posiciones ocupadas antes de generar nuevas polillas
 	pos_ocupada.clear()
 	
-	generate_polillas(ClarasA, num_polillas_claras)
-	generate_polillas(MelanicasA, num_polillas_melanicas)
+	generate_polillas(ClarasA, actualizar_polillas(num_polillas_claras))
+	generate_polillas(MelanicasA, actualizar_polillas(num_polillas_melanicas))
 	
 	#Asignar el tiemp respectivamente a cada nivel
 	time_mundo = tiempo_por_nivel
@@ -78,7 +78,6 @@ func generate_polillas(polilla_scene, num_polillas):
 	for j in range(num_polillas):
 		var polilla_new = polilla_scene.instantiate()
 		add_child(polilla_new)
-		
 		
 		var pos_rand = pos_unica()
 		polilla_new.position = pos_rand
@@ -99,6 +98,17 @@ func generate_polillas(polilla_scene, num_polillas):
 			var animation_length = sprite_frames.get_frame_count("default")
 			animated_sprite.frame = randi() % animation_length
 
+# Funcion para actualizar numero de polillas
+func actualizar_polillas(num_polillas_sobrevivientes):
+	var num_polillas_actualizadas
+	if (Conteo.NivelActual == 1):
+		return num_polillas_actualizadas
+	num_polillas_actualizadas = 1.25 * num_polillas_sobrevivientes
+	if (Conteo.Total_polillas > 50):
+		num_polillas_actualizadas -= 1
+		print(num_polillas_actualizadas)
+		print(Conteo.Total_polillas)
+	return num_polillas_actualizadas
 
 # Función para obtener una posición aleatoria única
 func pos_unica():
