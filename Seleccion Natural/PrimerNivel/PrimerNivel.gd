@@ -4,6 +4,10 @@ extends Node2D
 var claras = Conteo.G_claras
 var melanicas = Conteo.G_melanicas
 
+var puntaje_claras = 0
+var puntaje_melanicas = 0
+var limite = 200
+
 #DELIMITACIÓN DE LOS NIVELES
 var nivel = 1
 var max_niveles = 3
@@ -16,10 +20,6 @@ var time_mundo = tiempo_por_nivel
 var rect_width = 40
 var rect_height = 15
 var rect_margin = 5
-
-#NUMERO DE POLILLAS EXISTENTES AL INICIAR EL NIVEL
-var num_polillas_claras = 20
-var num_polillas_melanicas = 20
 
 var incremento_polillas = 2  #Incremento por nivel
 var min_polillas = 2  #Número mínimo de polillas de cada tipo
@@ -49,8 +49,13 @@ func _ready():
 
 #Función declarada para dar comienzo al juego (o niveles)
 func iniciar_nivel():
-	Conteo.Claras_sobrevivientes = num_polillas_claras
-	Conteo.Melanicas_sobrevivientes = num_polillas_melanicas
+	#tope(Conteo.Total_polillas)
+	Conteo.Consumidas = 0
+	var total
+	Conteo.G_claras = actualizar_polillas(Conteo.G_claras)
+	Conteo.G_melanicas = actualizar_polillas(Conteo.G_melanicas)
+	total = Conteo.G_claras + Conteo.G_melanicas
+	tope(total)
 	# Obtener el tamaño del viewport correctamente
 # warning-ignore:unused_variable
 	var viewport_size = get_viewport().size
@@ -58,8 +63,8 @@ func iniciar_nivel():
 	# Limpiar las posiciones ocupadas antes de generar nuevas polillas
 	pos_ocupada.clear()
 	
-	generate_polillas(ClarasA, actualizar_polillas(num_polillas_claras))
-	generate_polillas(MelanicasA, actualizar_polillas(num_polillas_melanicas))
+	generate_polillas(ClarasA, Conteo.G_claras)
+	generate_polillas(MelanicasA, Conteo.G_melanicas) 
 	
 	#Asignar el tiemp respectivamente a cada nivel
 	time_mundo = tiempo_por_nivel
@@ -70,8 +75,18 @@ func iniciar_nivel():
 	aparezca un letrero indicando en que nivel nos encontramos.
 	"""
 	#Contador de polillas atrapadas al iniciar el nivel
-
-
+func tope(total_polillas):
+	#Nota: Tope maximo de polillas en pantalla: 80
+	var t_polillas = float(total_polillas)
+	var c_claras = float(Conteo.G_claras)
+	var c_melanicas = float(Conteo.G_claras)
+	print("Si entro")
+	if (total_polillas > limite):
+		var p_claras= (c_claras/t_polillas)
+		var p_melanicas= (c_melanicas/t_polillas)
+		Conteo.G_claras = p_claras*limite
+		Conteo.G_melanicas = p_melanicas*limite
+		print("Si entro x2")
 #Función que lleva el control de la generación de las polillas
 func generate_polillas(polilla_scene, num_polillas):
 # warning-ignore:unused_variable
@@ -100,15 +115,12 @@ func generate_polillas(polilla_scene, num_polillas):
 
 # Funcion para actualizar numero de polillas
 func actualizar_polillas(num_polillas_sobrevivientes):
-	var num_polillas_actualizadas
-	if (Conteo.NivelActual == 1):
+	var num_polillas_actualizadas = num_polillas_sobrevivientes
+	if (Conteo.NivelActual == 0):
 		return num_polillas_actualizadas
-	num_polillas_actualizadas = 1.25 * num_polillas_sobrevivientes
-	if (Conteo.Total_polillas > 50):
-		num_polillas_actualizadas -= 1
-		print(num_polillas_actualizadas)
-		print(Conteo.Total_polillas)
-	return num_polillas_actualizadas
+	else:
+		num_polillas_actualizadas = 3 * num_polillas_sobrevivientes
+		return num_polillas_actualizadas
 
 # Función para obtener una posición aleatoria única
 func pos_unica():
@@ -128,15 +140,17 @@ func pos_unica():
 func _on_Timer_timeout():
 	time_mundo -= 1 #Vamos restando de 1 segundo el tiempo establecido (cuenta regresiva)
 	get_node("MarginContainer/VBoxContainer/Tiempo").text = "Tiempo: " + str(time_mundo)
-	get_node("MarginContainer/VBoxContainer2/Nivel").text = "Nivel: 1"
+	get_node("MarginContainer/VBoxContainer2/Nivel").text = "Año: " + str(Conteo.NivelActual)
 	if time_mundo == 0:
 		"""
 		En un principio aquí usabamos a función:
 		get_tree().quit()
 		Pero ahora en esta sección se avanzara al siguiente nivel
 		"""
-		
-		cambio_escena()
+		if Conteo.Consumidas >  10 :
+			cambio_escena()
+		else:
+			get_tree().quit() 
 
 func cambio_escena():
 # warning-ignore:return_value_discarded
@@ -144,14 +158,16 @@ func cambio_escena():
 		
 
 func _on_ClarasA_pressed():
-	Conteo.G_claras += 1
-	Conteo.Claras_sobrevivientes -= 1
-	get_node("MarginContainer/VBoxContainer/Cla").text = "CLARAS: " + str(Conteo.G_claras)
+	Conteo.G_claras -= 1
+	puntaje_claras += 1
+	Conteo.Consumidas += 1
+	get_node("MarginContainer/VBoxContainer/Cla").text = "CLARAS: " + str(puntaje_claras)
 
 func _on_MelanicasA_pressed():
-	Conteo.G_melanicas += 1
-	Conteo.Melanicas_sobrevivientes -= 1
-	get_node("MarginContainer/VBoxContainer/Mel").text = "MELANICAS: " + str(Conteo.G_melanicas)
+	Conteo.G_melanicas -= 1
+	puntaje_melanicas += 1
+	Conteo.Consumidas += 1
+	get_node("MarginContainer/VBoxContainer/Mel").text = "MELANICAS: " + str(puntaje_melanicas)
 
 func _draw():
 	for i in range(6):

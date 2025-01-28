@@ -8,7 +8,6 @@ signal ConteoClaras
 func _ready():
 	randomize()
 
-
 func _on_Button_pressed():
 	claras += 1
 	get_parent().call("_on_ClarasA_pressed")

@@ -1,6 +1,8 @@
-Timer
 AnimationPlayer
 Label
+Sprite2D
+ColorRect
+Timer
 Node2D
 Panel
 TextEdit
@@ -10,5 +12,3 @@ HBoxContainer
 VBoxContainer
 Window
 ProgressBar
-Sprite2D
-CanvasLayer
