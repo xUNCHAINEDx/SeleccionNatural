@@ -74,19 +74,21 @@ func iniciar_nivel():
 	podemos hacer que en el respectivo fondo de la escena
 	aparezca un letrero indicando en que nivel nos encontramos.
 	"""
-	#Contador de polillas atrapadas al iniciar el nivel
+#Funcion para ajustar el número de polillas en función del límite
 func tope(total_polillas):
-	#Nota: Tope maximo de polillas en pantalla: 80
+	#Conversión de los datos en formato float
 	var t_polillas = float(total_polillas)
 	var c_claras = float(Conteo.G_claras)
 	var c_melanicas = float(Conteo.G_claras)
-	print("Si entro")
+	#Comparación del número total de polillas con el límite
 	if (total_polillas > limite):
+		#Obtención de la proporción de las polillas y ajuste en función al límite
 		var p_claras= (c_claras/t_polillas)
 		var p_melanicas= (c_melanicas/t_polillas)
 		Conteo.G_claras = p_claras*limite
 		Conteo.G_melanicas = p_melanicas*limite
-		print("Si entro x2")
+
+
 #Función que lleva el control de la generación de las polillas
 func generate_polillas(polilla_scene, num_polillas):
 # warning-ignore:unused_variable
