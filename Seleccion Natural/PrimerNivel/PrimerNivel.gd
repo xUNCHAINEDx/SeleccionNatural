@@ -7,13 +7,14 @@ var melanicas = Conteo.G_melanicas
 var puntaje_claras = 0
 var puntaje_melanicas = 0
 var limite = 200
+var min_consumidas = 1
 
 #DELIMITACIÓN DE LOS NIVELES
 var nivel = 1
 var max_niveles = 3
 
 #DELIMITACIÓN DEL NIVEL DE JUEGO
-var tiempo_por_nivel = 10
+var tiempo_por_nivel = 15
 var time_mundo = tiempo_por_nivel
 
 #DEFINICIÓN DEL TAMAÑO DE PANTALLA
@@ -149,7 +150,8 @@ func _on_Timer_timeout():
 		get_tree().quit()
 		Pero ahora en esta sección se avanzara al siguiente nivel
 		"""
-		if Conteo.Consumidas >  10 :
+
+		if Conteo.Consumidas >= min_consumidas:
 			cambio_escena()
 		else:
 			get_tree().quit() 
