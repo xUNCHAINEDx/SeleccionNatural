@@ -45,8 +45,13 @@ var rng = RandomNumberGenerator.new()
 
 #Despliegue de la pantalla inicial
 func _ready():
-	#OS.center_window()
+	ajustar_posicion_pantalla()
 	iniciar_nivel()
+
+func ajustar_posicion_pantalla():
+	var viewport_size = get_viewport_rect().size  # Obtiene el tamaño de la pantalla
+	position = viewport_size / 2  # Centra el nodo raíz en la pantalla
+
 
 #Función declarada para dar comienzo al juego (o niveles)
 func iniciar_nivel():

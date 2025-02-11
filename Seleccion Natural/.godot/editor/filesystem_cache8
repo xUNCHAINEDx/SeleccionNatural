@@ -1,12 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1739297491
-default_env.tres::Environment::474814481240034724::1739278663::0::1::::<><>::
+::res://::1739300988
+default_env.tres::Environment::474814481240034724::1739298676::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1739298829::0::1::::<><>::
 Interfaz.tscn::PackedScene::1864744828624898791::1739278662::0::1::::<><>::uid://bkmpdefn6lrym::::res://Assets/Fronts/Kenney Blocks.ttf
 Main.gd::GDScript::-1::1739278663::0::1::::<>Node2D<>::
-::res://Assets/::1739278996
+::res://Assets/::1739297496
 Sprite2.png::CompressedTexture2D::8656866987272073772::1738036302::1739297496::1::::<><>::
 Sprite.png::CompressedTexture2D::8900498216147008218::1738036302::1739297495::1::::<><>::
-::res://Assets/Fronts/::1739278996
+::res://Assets/Fronts/::1739297493
 BungeeTint-Regular.ttf::FontFile::8485763615122046198::1739278662::1739297493::1::::<><>::
 Cute Boys.otf::FontFile::1887597954465781122::1739278662::1739297493::1::::<><>::
 Kenney Blocks.ttf::FontFile::3113997983845316264::1739278662::1739297493::1::::<><>::
@@ -15,7 +16,7 @@ SMILE KINDS.ttf::FontFile::6173776295375322697::1739278662::1739297493::1::::<><
 Super Moods.ttf::FontFile::623854424387764789::1739278662::1739297493::1::::<><>::
 Welcome Cartoon.otf::FontFile::7252629520092617203::1739278662::1739297493::1::::<><>::
 Xolonium-Bold.ttf::FontFile::6131578985981224123::1739278662::1739297493::1::::<><>::
-::res://Jugador/::1739278996
+::res://Jugador/::1739297494
 B1.png::CompressedTexture2D::7683437391109075489::1739278662::1739297494::1::::<><>::
 B2.png::CompressedTexture2D::8728253263906496723::1739278662::1739297494::1::::<><>::
 B3.png::CompressedTexture2D::2634498572348312702::1739278663::1739297494::1::::<><>::
@@ -38,13 +39,13 @@ ClarasA.tscn::PackedScene::7874811855175036681::1739278663::0::1::::<><>::uid://
 ::res://Polillas/MelanicasA/::1739278663
 MelanicasA.gd::GDScript::-1::1739278663::0::1::::<>Node2D<>::
 MelanicasA.tscn::PackedScene::8358883641598158454::1739278663::0::1::::<><>::uid://dhp6ddrf2e3s4::::res://Jugador/B1.png<>uid://dwmbb51x8oh7x::::res://Jugador/B2.png<>res://Polillas/MelanicasA/MelanicasA.gd<>uid://bdsf2on46jggc::::res://Jugador/B3.png
-::res://PrimerNivel/::1739278997
+::res://PrimerNivel/::1739297494
 Control.tscn::PackedScene::-1::1739278663::0::1::::<><>::
 Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg::CompressedTexture2D::1041693393901426209::1739278663::1739297494::1::::<><>::
 PrimerNivel.gd::GDScript::-1::1739278997::0::1::::<>Node2D<>::
 PrimerNivel.tscn::PackedScene::5738189616685903302::1739278663::0::1::::<><>::uid://1tkcstjjxi6b::::res://Interfaz.tscn<>res://PrimerNivel/PrimerNivel.gd<>uid://o3usj6ypcra4::::res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg
-::res://Principal/::1739278663
-Main.tscn::PackedScene::476398850356379786::1739278663::0::1::::<><>::res://Main.gd<>uid://bkmpdefn6lrym::::res://Assets/Fronts/Kenney Blocks.ttf
+::res://Principal/::1739298676
+Main.tscn::PackedScene::476398850356379786::1739298676::0::1::::<><>::res://Main.gd<>uid://bkmpdefn6lrym::::res://Assets/Fronts/Kenney Blocks.ttf
 ::res://Resultados/::1739278997
 Conteo.gd::GDScript::-1::1739278663::0::1::::<>Node<>::
 Graficas.gd::GDScript::-1::1739278997::0::1::::<>Node2D<>::
