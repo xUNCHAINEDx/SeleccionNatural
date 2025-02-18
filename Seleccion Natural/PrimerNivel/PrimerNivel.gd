@@ -45,13 +45,7 @@ var rng = RandomNumberGenerator.new()
 
 #Despliegue de la pantalla inicial
 func _ready():
-	ajustar_posicion_pantalla()
 	iniciar_nivel()
-
-func ajustar_posicion_pantalla():
-	var viewport_size = get_viewport_rect().size  # Obtiene el tamaño de la pantalla
-	position = viewport_size / 2  # Centra el nodo raíz en la pantalla
-
 
 #Función declarada para dar comienzo al juego (o niveles)
 func iniciar_nivel():
@@ -98,6 +92,8 @@ func tope(total_polillas):
 #Función que lleva el control de la generación de las polillas
 func generate_polillas(polilla_scene, num_polillas):
 # warning-ignore:unused_variable
+	if num_polillas ==0:
+		return
 	for j in range(num_polillas):
 		var polilla_new = polilla_scene.instantiate()
 		add_child(polilla_new)
