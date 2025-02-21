@@ -155,7 +155,8 @@ func _on_Timer_timeout():
 		if Conteo.Consumidas >= min_consumidas:
 			cambio_escena()
 		else:
-			get_tree().quit() 
+			
+			LoadManager.load_scene("res://Principal/Main.tscn")
 
 func cambio_escena():
 # warning-ignore:return_value_discarded
