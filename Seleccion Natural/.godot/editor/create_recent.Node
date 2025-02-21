@@ -1,6 +1,6 @@
 AnimationPlayer
-Label
 Sprite2D
+Label
 ColorRect
 Timer
 Node2D
