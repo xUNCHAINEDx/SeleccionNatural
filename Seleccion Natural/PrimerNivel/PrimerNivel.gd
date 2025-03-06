@@ -148,13 +148,9 @@ func _on_Timer_timeout():
 		Pero ahora en esta sección se avanzara al siguiente nivel
 		"""
 		if Conteo.Consumidas >  10 :
-			cambio_escena()
+			LoadManager.load_scene("res://Resultados/PantallaGraficas.tscn")
 		else:
 			LoadManager.load_scene("res://PantallaDeMuerte/PantallaDeMuerte.tscn")
-
-func cambio_escena():
-# warning-ignore:return_value_discarded
-	LoadManager.load_scene("res://Resultados/PantallaGraficas.tscn")
 		
 
 func _on_ClarasA_pressed():
