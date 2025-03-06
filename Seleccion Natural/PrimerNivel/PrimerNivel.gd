@@ -150,7 +150,7 @@ func _on_Timer_timeout():
 		if Conteo.Consumidas >  10 :
 			cambio_escena()
 		else:
-			get_tree().quit() 
+			LoadManager.load_scene("res://PantallaDeMuerte/PantallaDeMuerte.tscn")
 
 func cambio_escena():
 # warning-ignore:return_value_discarded

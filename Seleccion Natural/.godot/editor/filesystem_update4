@@ -1,2 +1,10 @@
 res://default_env.tres
 res://PantallaDeMuerte/PantallaDeMuerte.tscn
+res://PantallaDeMuerte/PantallaDeMuerte.gd
+res://Principal/Main.tscn
+res://Resultados/PantallaGraficas.tscn
+res://Polillas/Claras/ClarasA.tscn
+res://PrimerNivel/PrimerNivel.tscn
+res://PrimerNivel/PrimerNivel.gd
+res://Interfaz.tscn
+res://pantallaDeCarga/loading_screen.tscn

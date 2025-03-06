@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://d1ala76vhkg70"]
+[gd_scene load_steps=6 format=3 uid="uid://d1ala76vhkg70"]
 
 [ext_resource type="Texture2D" uid="uid://basx88bjhcxyv" path="res://Assets/PantallaDeMuerte.PNG" id="1_84ig2"]
+[ext_resource type="Script" path="res://PantallaDeMuerte/PantallaDeMuerte.gd" id="1_xk484"]
 
 [sub_resource type="Animation" id="Animation_n4vgl"]
 resource_name = "FadeIn"
@@ -64,6 +65,7 @@ _data = {
 }
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_xk484")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0)
@@ -75,3 +77,8 @@ texture = ExtResource("1_84ig2")
 libraries = {
 "": SubResource("AnimationLibrary_u0hw5")
 }
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
