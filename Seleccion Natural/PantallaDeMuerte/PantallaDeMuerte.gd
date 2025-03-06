@@ -5,8 +5,8 @@ var temporizador = 3
 
 func _on_timer_timeout() -> void:
 	temporizador -= 1  # Vamos restando de 1 en 1 el tiempo establecido (cuenta regresiva)
-	
 	if temporizador == 0:
 		animationPlayer.play("FadeIn")
 		await animationPlayer.animation_finished
+		await get_tree().create_timer(2).timeout
 		LoadManager.load_scene("res://Principal/Main.tscn")  # Carga la escena principal
