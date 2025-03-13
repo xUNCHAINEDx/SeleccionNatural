@@ -147,7 +147,8 @@ func _on_Timer_timeout():
 		get_tree().quit()
 		Pero ahora en esta sección se avanzara al siguiente nivel
 		"""
-		if Conteo.Consumidas >  10 :
+		if Conteo.Consumidas >  Conteo.Limite :
+			Conteo.Limite *=2
 			LoadManager.load_scene("res://Resultados/PantallaGraficas.tscn")
 		else:
 			LoadManager.load_scene("res://PantallaDeMuerte/PantallaDeMuerte.tscn")
