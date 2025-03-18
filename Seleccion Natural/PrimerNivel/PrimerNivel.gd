@@ -44,7 +44,6 @@ var rng = RandomNumberGenerator.new()
 
 #Despliegue de la pantalla inicial
 func _ready():
-	#OS.center_window()
 	iniciar_nivel()
 
 #Función declarada para dar comienzo al juego (o niveles)
@@ -74,22 +73,26 @@ func iniciar_nivel():
 	podemos hacer que en el respectivo fondo de la escena
 	aparezca un letrero indicando en que nivel nos encontramos.
 	"""
-	#Contador de polillas atrapadas al iniciar el nivel
+#Funcion para ajustar el número de polillas en función del límite
 func tope(total_polillas):
-	#Nota: Tope maximo de polillas en pantalla: 80
+	#Conversión de los datos en formato float
 	var t_polillas = float(total_polillas)
 	var c_claras = float(Conteo.G_claras)
 	var c_melanicas = float(Conteo.G_claras)
-	print("Si entro")
+	#Comparación del número total de polillas con el límite
 	if (total_polillas > limite):
+		#Obtención de la proporción de las polillas y ajuste en función al límite
 		var p_claras= (c_claras/t_polillas)
 		var p_melanicas= (c_melanicas/t_polillas)
-		Conteo.G_claras = p_claras*limite
-		Conteo.G_melanicas = p_melanicas*limite
-		print("Si entro x2")
+		Conteo.G_claras = p_claras*200
+		Conteo.G_melanicas = p_melanicas*200
+
+
 #Función que lleva el control de la generación de las polillas
 func generate_polillas(polilla_scene, num_polillas):
 # warning-ignore:unused_variable
+	if num_polillas == 0:
+		num_polillas =  min_polillas
 	for j in range(num_polillas):
 		var polilla_new = polilla_scene.instantiate()
 		add_child(polilla_new)
@@ -147,11 +150,16 @@ func _on_Timer_timeout():
 		get_tree().quit()
 		Pero ahora en esta sección se avanzara al siguiente nivel
 		"""
+
 		if Conteo.Consumidas >  Conteo.Limite :
 			Conteo.Limite *=2
 			LoadManager.load_scene("res://Resultados/PantallaGraficas.tscn")
 		else:
 			LoadManager.load_scene("res://PantallaDeMuerte/PantallaDeMuerte.tscn")
+
+func cambio_escena():
+# warning-ignore:return_value_discarded
+	LoadManager.load_scene("res://Resultados/PantallaGraficas.tscn")
 		
 
 func _on_ClarasA_pressed():
