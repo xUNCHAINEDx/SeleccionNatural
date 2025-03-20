@@ -9,8 +9,8 @@ var puntaje_melanicas = 0
 var limite = 200
 
 #DELIMITACIÓN DE LOS NIVELES
-var nivel = 1
-var max_niveles = 3
+#var nivel = 1
+#var max_niveles = 3
 
 #DELIMITACIÓN DEL NIVEL DE JUEGO
 var tiempo_por_nivel = 10
@@ -51,8 +51,10 @@ func iniciar_nivel():
 	#tope(Conteo.Total_polillas)
 	Conteo.Consumidas = 0
 	var total
-	Conteo.G_claras = actualizar_polillas(Conteo.G_claras)
-	Conteo.G_melanicas = actualizar_polillas(Conteo.G_melanicas)
+	if Conteo.G_claras != 0:
+		Conteo.G_claras = actualizar_polillas(Conteo.G_claras)
+	if Conteo.G_melanicas != 0:
+		Conteo.G_melanicas = actualizar_polillas(Conteo.G_melanicas)
 	total = Conteo.G_claras + Conteo.G_melanicas
 	tope(total)
 	# Obtener el tamaño del viewport correctamente
@@ -61,9 +63,10 @@ func iniciar_nivel():
 	randomize()	
 	# Limpiar las posiciones ocupadas antes de generar nuevas polillas
 	pos_ocupada.clear()
-	
-	generate_polillas(ClarasA, Conteo.G_claras)
-	generate_polillas(MelanicasA, Conteo.G_melanicas) 
+	if Conteo.G_claras != 0:
+		generate_polillas(ClarasA, Conteo.G_claras)
+	if Conteo.G_melanicas != 0:
+		generate_polillas(MelanicasA, Conteo.G_melanicas) 
 	
 	#Asignar el tiemp respectivamente a cada nivel
 	time_mundo = tiempo_por_nivel
@@ -90,9 +93,8 @@ func tope(total_polillas):
 
 #Función que lleva el control de la generación de las polillas
 func generate_polillas(polilla_scene, num_polillas):
+	print("Si entro en generación")
 # warning-ignore:unused_variable
-	if num_polillas == 0:
-		num_polillas =  min_polillas
 	for j in range(num_polillas):
 		var polilla_new = polilla_scene.instantiate()
 		add_child(polilla_new)
@@ -120,9 +122,11 @@ func generate_polillas(polilla_scene, num_polillas):
 func actualizar_polillas(num_polillas_sobrevivientes):
 	var num_polillas_actualizadas = num_polillas_sobrevivientes
 	if (Conteo.NivelActual == 0):
+		print("Si entro actualizar polillas contingnecia 0")
 		return num_polillas_actualizadas
 	else:
 		num_polillas_actualizadas = 3 * num_polillas_sobrevivientes
+		print("Si entro actualizar polillas normal")
 		return num_polillas_actualizadas
 
 # Función para obtener una posición aleatoria única
