@@ -89,6 +89,8 @@ func tope(total_polillas):
 		var p_melanicas= (c_melanicas/t_polillas)
 		Conteo.G_claras = p_claras*200
 		Conteo.G_melanicas = p_melanicas*200
+		return
+	return
 
 
 #Función que lleva el control de la generación de las polillas
