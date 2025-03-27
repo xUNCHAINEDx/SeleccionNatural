@@ -1,3 +1,5 @@
+Button
+MultiplayerSpawner
 Timer
 Node2D
 AnimationPlayer
@@ -10,5 +12,3 @@ Popup
 Container
 HBoxContainer
 VBoxContainer
-Window
-ProgressBar

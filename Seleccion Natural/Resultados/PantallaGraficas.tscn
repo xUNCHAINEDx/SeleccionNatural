@@ -100,4 +100,13 @@ autoplay = "fade_in"
 [node name="Timer" type="Timer" parent="."]
 autostart = true
 
+[node name="Pasar" type="Button" parent="."]
+layout_mode = 0
+offset_left = 166.0
+offset_top = 341.0
+offset_right = 281.0
+offset_bottom = 369.0
+text = "Pasar"
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="button_down" from="Pasar" to="." method="_on_pasar_button_down"]
