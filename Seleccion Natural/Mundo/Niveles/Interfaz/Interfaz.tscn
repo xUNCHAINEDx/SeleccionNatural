@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=3 uid="uid://1tkcstjjxi6b"]
+
+[ext_resource type="FontFile" uid="uid://die5gkwaafd6l" path="res://Assets/Fonts/Kenney Blocks.ttf" id="1_5tu2n"]
+
+[node name="MarginContainer" type="MarginContainer"]
+offset_left = 48.0
+offset_top = 20.0
+offset_right = 1008.0
+offset_bottom = 1016.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Mel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_5tu2n")
+text = "Melanicas: "
+horizontal_alignment = 2
+
+[node name="Cla" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_5tu2n")
+text = "Claras: "
+horizontal_alignment = 2
+
+[node name="Tiempo" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_5tu2n")
+text = "Tiempo:"
+horizontal_alignment = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Nivel" type="Label" parent="VBoxContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_5tu2n")
+text = "Nivel
+"
+horizontal_alignment = 1

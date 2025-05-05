@@ -10,39 +10,21 @@ config_version=5
 
 [application]
 
-config/name="Seleccion Natural"
-run/main_scene="res://Principal/Main.tscn"
-config/features=PackedStringArray("4.3")
+config/name="SeleccionNatural"
+run/main_scene="res://Mundo/PantallaInicio/pantalla_inicio.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
 
 [autoload]
 
 LoadManager="*res://ManejadorDeCarga/LoadManager.gd"
-Conteo="*res://Resultados/Conteo.gd"
+Conteo="*res://Mundo/Niveles/Conteo.gd"
 
 [display]
 
 window/size/viewport_width=1048
 window/size/viewport_height=1048
-window/size/always_on_top=true
-window/stretch/mode="2d"
-window/handheld/orientation="portrait"
-
-[gui]
-
-common/drop_mouse_on_gui_input_disabled=true
-
-[physics]
-
-common/enable_pause_aware_picking=true
 
 [rendering]
 
-environment/defaults/default_environment="res://default_env.tres"
-quality/driver/driver_name="GLES2"
-2d/snapping/use_gpu_pixel_snap=true
-vram_compression/import_etc=true
-2d/stretch/aspect="ignore"
-2d/stretch/mode="disabled"
-2d/handheld/orientation="landscape"
-2d/size/fullscreen=true
-2d/size/borderless=true
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

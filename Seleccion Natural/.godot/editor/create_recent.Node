@@ -1,14 +1,28 @@
+<<<<<<< Updated upstream
 TextureRect
 Node2D
 Timer
 AnimationPlayer
 Label
+=======
+AnimationPlayer
+Sprite2D
+Button
+>>>>>>> Stashed changes
 Panel
-TextEdit
-Popup
-Container
-HBoxContainer
+CanvasLayer
+TextureRect
+ProgressBar
+ColorRect
+Timer
+Control
+RichTextLabel
+AspectRatioContainer
 VBoxContainer
+<<<<<<< Updated upstream
 Window
 ProgressBar
 Sprite2D
+=======
+PanelContainer
+>>>>>>> Stashed changes
