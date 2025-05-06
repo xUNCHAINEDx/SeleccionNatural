@@ -10,7 +10,9 @@ func _update_progress_bar(new_value: float) -> void:
 	progressBar.set_value_no_signal(new_value * 100)
 	
 func _on_button_button_down() -> void:
-	_continue_outro_animation()
+	if animation_playing:
+		# Continuar con la animación de salida cuando se presiona el botón
+		_continue_outro_animation()
 	
 func _start_outro_animation() -> void:
 	print("Reproduciendo animación inicial...")
@@ -24,5 +26,4 @@ func _continue_outro_animation() -> void:
 	print("Continuando animación de salida...")
 	animationPlayer.play("fade_out")
 	await animationPlayer.animation_finished
-	emit_signal("loading_screeen_has_full_coverage")  # Emitir la señal aquí
 	queue_free()

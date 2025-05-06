@@ -1,23 +1,11 @@
-<<<<<<< Updated upstream
-res://default_env.tres
-res://Principal/Main.tscn
-res://Resultados/PantallaGraficas.tscn
-res://pantallaDeCarga/loading_screen.tscn
-res://PrimerNivel/PrimerNivel.tscn
-res://Polillas/Claras/ClarasA.tscn
-res://SegundoNivel/SegundoNivel.tscn
-res://Polillas/MelanicasA/MelanicasA.tscn
-res://Interfaz.tscn
-=======
-res://Mundo/PantallaInicio/pantalla_inicio.tscn
+res://ManejadorDeCarga/PantallaDeCarga/loading_screen.tscn
 res://ManejadorDeCarga/LoadManager.gd
+res://Mundo/PantallaInicio/pantalla_inicio.tscn
 res://Mundo/Niveles/Interfaz/Interfaz.tscn
 res://Mundo/Niveles/Niveles.tscn
 res://Mundo/PantallaDeMuerte/PantallaDeMuerte.tscn
 res://Mundo/polillas/Claras/ClarasA.tscn
 res://Mundo/polillas/MelanicasA/MelanicasA.tscn
 res://Mundo/Puntuación/PantallaGraficas.tscn
-res://ManejadorDeCarga/PantallaDeCarga/loading_screen.tscn
 res://Mundo/Niveles/niveles.gd
 res://ManejadorDeCarga/PantallaDeCarga/loading_screen.gd
->>>>>>> Stashed changes

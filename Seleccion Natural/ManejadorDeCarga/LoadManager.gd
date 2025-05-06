@@ -19,6 +19,7 @@ func load_scene(scene_path: String) -> void:
 	
 	self.progesss_changed.connect(new_loading_screen._update_progress_bar)
 	self.load_done.connect(new_loading_screen._start_outro_animation)
+	
 	await Signal(new_loading_screen, "loading_screeen_has_full_coverage")
 	start_load()
 
@@ -39,9 +40,4 @@ func _process(_delta):
 			_loaded_resource = ResourceLoader.load_threaded_get(_scene_path)
 			emit_signal("progesss_changed", 1.0)
 			emit_signal("load_done")
-			# Liberar la escena actual antes de cambiar
-			var current_scene = get_tree().current_scene
-			if current_scene:
-				current_scene.queue_free()
 			get_tree().change_scene_to_packed(_loaded_resource)
-	

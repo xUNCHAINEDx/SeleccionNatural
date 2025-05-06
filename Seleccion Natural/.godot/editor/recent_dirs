@@ -1,10 +1,3 @@
-<<<<<<< Updated upstream
-res://
-res://Resultados
-res://ManejadorDeCarga
-res://pantallaDeCarga
-res://PrimerNivel
-=======
 res://Assets/PantallaDeMuerte
 res://Mundo/PantallaDeMuerte
 res://Mundo/Puntuación
@@ -15,4 +8,3 @@ res://ManejadorDeCarga
 res://Mundo/PantallaInicio
 res://Mundo/Niveles
 res://Assets/PantallaDeInicio
->>>>>>> Stashed changes

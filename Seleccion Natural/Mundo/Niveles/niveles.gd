@@ -4,9 +4,13 @@ extends Node2D
 var claras = Conteo.G_claras
 var melanicas = Conteo.G_melanicas
 
+var puntaje_claras = 0
+var puntaje_melanicas = 0
+var limite = 200
+
 #DELIMITACIÓN DE LOS NIVELES
-var nivel = 1
-var max_niveles = 3
+#var nivel = 1
+#var max_niveles = 3
 
 #DELIMITACIÓN DEL NIVEL DE JUEGO
 var tiempo_por_nivel = 10
@@ -16,10 +20,6 @@ var time_mundo = tiempo_por_nivel
 var rect_width = 40
 var rect_height = 15
 var rect_margin = 5
-
-#NUMERO DE POLILLAS EXISTENTES AL INICIAR EL NIVEL
-var num_polillas_claras = 20
-var num_polillas_melanicas = 20
 
 var incremento_polillas = 2  #Incremento por nivel
 var min_polillas = 2  #Número mínimo de polillas de cada tipo
@@ -49,11 +49,6 @@ var rng = RandomNumberGenerator.new()
 
 #Despliegue de la pantalla inicial
 func _ready():
-<<<<<<< Updated upstream:Seleccion Natural/PrimerNivel/PrimerNivel.gd
-	#OS.center_window()
-=======
-	await Signal()
->>>>>>> Stashed changes:Seleccion Natural/Mundo/Niveles/niveles.gd
 	iniciar_nivel()
 	var anim_player = $AnimationPlayer
 	remove_child(anim_player)
@@ -61,29 +56,29 @@ func _ready():
 
 #Función declarada para dar comienzo al juego (o niveles)
 func iniciar_nivel():
-	Conteo.Claras_sobrevivientes = num_polillas_claras
-	Conteo.Melanicas_sobrevivientes = num_polillas_melanicas
+	#tope(Conteo.Total_polillas)
+	Conteo.Consumidas = 0
+	var total
+	if Conteo.G_claras != 0:
+		Conteo.G_claras = actualizar_polillas(Conteo.G_claras)
+	if Conteo.G_melanicas != 0:
+		Conteo.G_melanicas = actualizar_polillas(Conteo.G_melanicas)
+	total = Conteo.G_claras + Conteo.G_melanicas
+	tope(total)
 	# Obtener el tamaño del viewport correctamente
 # warning-ignore:unused_variable
 	#var viewport_size = get_viewport().size
 	randomize()	
 	# Limpiar las posiciones ocupadas antes de generar nuevas polillas
 	pos_ocupada.clear()
-	
-	generate_polillas(ClarasA, num_polillas_claras)
-	generate_polillas(MelanicasA, num_polillas_melanicas)
+	if Conteo.G_claras != 0:
+		generate_polillas(ClarasA, Conteo.G_claras)
+	if Conteo.G_melanicas != 0:
+		generate_polillas(MelanicasA, Conteo.G_melanicas) 
 	
 	#Asignar el tiemp respectivamente a cada nivel
 	time_mundo = tiempo_por_nivel
 	
-<<<<<<< Updated upstream:Seleccion Natural/PrimerNivel/PrimerNivel.gd
-	"""
-	Nota: Para poder saber sobre que nivel estamos,
-	podemos hacer que en el respectivo fondo de la escena
-	aparezca un letrero indicando en que nivel nos encontramos.
-	"""
-	#Contador de polillas atrapadas al iniciar el nivel
-=======
 #Funcion para ajustar el número de polillas en función del límite
 func tope(total_polillas):
 	#Conversión de los datos en formato float
@@ -97,16 +92,15 @@ func tope(total_polillas):
 		var p_melanicas= (c_melanicas/t_polillas)
 		Conteo.G_claras = p_claras*200
 		Conteo.G_melanicas = p_melanicas*200
->>>>>>> Stashed changes:Seleccion Natural/Mundo/Niveles/niveles.gd
 
 
 #Función que lleva el control de la generación de las polillas
 func generate_polillas(polilla_scene, num_polillas):
+	print("Si entro en generación")
 # warning-ignore:unused_variable
 	for j in range(num_polillas):
 		var polilla_new = polilla_scene.instantiate()
 		add_child(polilla_new)
-		
 		
 		var pos_rand = pos_unica()
 		polilla_new.position = pos_rand
@@ -127,6 +121,16 @@ func generate_polillas(polilla_scene, num_polillas):
 			var animation_length = sprite_frames.get_frame_count("default")
 			animated_sprite.frame = randi() % animation_length
 
+# Funcion para actualizar numero de polillas
+func actualizar_polillas(num_polillas_sobrevivientes):
+	var num_polillas_actualizadas = num_polillas_sobrevivientes
+	if (Conteo.NivelActual == 0):
+		print("Si entro actualizar polillas contingnecia 0")
+		return num_polillas_actualizadas
+	else:
+		num_polillas_actualizadas = 3 * num_polillas_sobrevivientes
+		print("Si entro actualizar polillas normal")
+		return num_polillas_actualizadas
 
 # Función para obtener una posición aleatoria única
 func pos_unica():
@@ -146,32 +150,8 @@ func pos_unica():
 func _on_Timer_timeout():
 	time_mundo -= 1 #Vamos restando de 1 segundo el tiempo establecido (cuenta regresiva)
 	get_node("MarginContainer/VBoxContainer/Tiempo").text = "Tiempo: " + str(time_mundo)
-	get_node("MarginContainer/VBoxContainer2/Nivel").text = "Nivel: 1"
+	get_node("MarginContainer/VBoxContainer2/Nivel").text = "Año: " + str(Conteo.NivelActual)
 	if time_mundo == 0:
-<<<<<<< Updated upstream:Seleccion Natural/PrimerNivel/PrimerNivel.gd
-		"""
-		En un principio aquí usabamos a función:
-		get_tree().quit()
-		Pero ahora en esta sección se avanzara al siguiente nivel
-		"""
-		
-		cambio_escena()
-
-func cambio_escena():
-# warning-ignore:return_value_discarded
-	LoadManager.load_scene("res://Resultados/PantallaGraficas.tscn")
-		
-
-func _on_ClarasA_pressed():
-	Conteo.G_claras += 1
-	Conteo.Claras_sobrevivientes -= 1
-	get_node("MarginContainer/VBoxContainer/Cla").text = "CLARAS: " + str(Conteo.G_claras)
-
-func _on_MelanicasA_pressed():
-	Conteo.G_melanicas += 1
-	Conteo.Melanicas_sobrevivientes -= 1
-	get_node("MarginContainer/VBoxContainer/Mel").text = "MELANICAS: " + str(Conteo.G_melanicas)
-=======
 		get_node("MarginContainer/VBoxContainer/Tiempo").text = "Tiempo: 0"
 		if Conteo.Consumidas >  Conteo.Limite :
 			Conteo.Limite *=2
@@ -199,7 +179,6 @@ func _on_Melanicas_pressed():
 	puntaje_melanicas += 1
 	Conteo.Consumidas += 1
 	get_node("MarginContainer/VBoxContainer/Mel").text = "MELANICAS: " + str(puntaje_melanicas)
->>>>>>> Stashed changes:Seleccion Natural/Mundo/Niveles/niveles.gd
 
 func _draw():
 	for i in range(6):

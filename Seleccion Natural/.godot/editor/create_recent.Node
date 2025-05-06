@@ -1,14 +1,6 @@
-<<<<<<< Updated upstream
-TextureRect
-Node2D
-Timer
-AnimationPlayer
-Label
-=======
 AnimationPlayer
 Sprite2D
 Button
->>>>>>> Stashed changes
 Panel
 CanvasLayer
 TextureRect
@@ -19,10 +11,4 @@ Control
 RichTextLabel
 AspectRatioContainer
 VBoxContainer
-<<<<<<< Updated upstream
-Window
-ProgressBar
-Sprite2D
-=======
 PanelContainer
->>>>>>> Stashed changes

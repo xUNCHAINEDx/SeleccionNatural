@@ -1,116 +1,56 @@
 ea4bc82a6ad023ab7ee23ee620429895
-<<<<<<< Updated upstream
-::res://::1732645326
-default_env.tres::Environment::474814481240034724::1730839282::0::1::::<><>::
-graficas.gd::GDScript::-1::1729021335::0::1::::<>Node2D<>::
-Interfaz.tscn::PackedScene::1864744828624898791::1730839282::0::1::::<><>::uid://bkmpdefn6lrym::::res://Assets/Fronts/Kenney Blocks.ttf
-Main.gd::GDScript::-1::1728587677::0::1::::<>Node2D<>::
-::res://Assets/::1729021593
-Sprite2.png::CompressedTexture2D::8656866987272073772::1726171647::1729021593::1::::<><>::
-Sprite.png::CompressedTexture2D::8900498216147008218::1726171647::1729021593::1::::<><>::
-::res://Assets/Fronts/::1729021590
-BungeeTint-Regular.ttf::FontFile::8485763615122046198::1728587676::1729021590::1::::<><>::
-Cute Boys.otf::FontFile::1887597954465781122::1728587676::1729021590::1::::<><>::
-Kenney Blocks.ttf::FontFile::3113997983845316264::1728587676::1729021590::1::::<><>::
-Kenney Future Narrow.ttf::FontFile::4283027045326816189::1728587676::1729021590::1::::<><>::
-SMILE KINDS.ttf::FontFile::6173776295375322697::1728587676::1729021590::1::::<><>::
-Super Moods.ttf::FontFile::623854424387764789::1728587676::1729021590::1::::<><>::
-Welcome Cartoon.otf::FontFile::7252629520092617203::1728587676::1729021590::1::::<><>::
-Xolonium-Bold.ttf::FontFile::6131578985981224123::1728587677::1729021590::1::::<><>::
-::res://Jugador/::1730836500
-B1.png::CompressedTexture2D::7683437391109075489::1729021335::1730836500::1::::<><>::
-B2.png::CompressedTexture2D::8728253263906496723::1729021335::1730836500::1::::<><>::
-B3.png::CompressedTexture2D::2634498572348312702::1729021335::1730836500::1::::<><>::
-Imagen de WhatsApp 2024-02-09 a las 15.29.46_5cf7e801.jpg::CompressedTexture2D::8861355078722301117::1726171647::1729021591::1::::<><>::
-p1.png::CompressedTexture2D::7744009956766014124::1726171647::1729021592::1::::<><>::
-p2.png::CompressedTexture2D::4812146152193698928::1726171647::1729021591::1::::<><>::
-P3.png::CompressedTexture2D::5988745456346950646::1726171647::1729021591::1::::<><>::
-T1.png::CompressedTexture2D::3952647936024927965::1729021335::1730836500::1::::<><>::
-T2.png::CompressedTexture2D::3431075355168614000::1729021335::1730836500::1::::<><>::
-T3.png::CompressedTexture2D::6493227638604948::1729021335::1730836500::1::::<><>::
-::res://ManejadorDeCarga/::1726171647
-LoadManager.gd::GDScript::-1::1726171647::0::1::::<>Node<>::
-::res://pantallaDeCarga/::1730839281
-loading_screen.gd::GDScript::-1::1726171647::0::1::::<>CanvasLayer<>::
-loading_screen.tscn::PackedScene::5626698389953482110::1730839281::0::1::::<><>::res://pantallaDeCarga/loading_screen.gd<>uid://o3usj6ypcra4::::res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg
-::res://Polillas/::1726171647
-::res://Polillas/Claras/::1730839281
-ClarasA.gd::GDScript::-1::1726171647::0::1::::<>Node2D<>::
-ClarasA.tscn::PackedScene::7874811855175036681::1730839281::0::1::::<><>::uid://diliyh0agjkme::::res://Jugador/p1.png<>uid://catblx0ce7cx1::::res://Jugador/p2.png<>uid://crk806xevnlco::::res://Jugador/P3.png<>res://Polillas/Claras/ClarasA.gd
-::res://Polillas/MelanicasA/::1730839282
-MelanicasA.gd::GDScript::-1::1726171647::0::1::::<>Node2D<>::
-MelanicasA.tscn::PackedScene::8358883641598158454::1730839282::0::1::::<><>::uid://dhp6ddrf2e3s4::::res://Jugador/B1.png<>uid://dwmbb51x8oh7x::::res://Jugador/B2.png<>res://Polillas/MelanicasA/MelanicasA.gd<>uid://bdsf2on46jggc::::res://Jugador/B3.png
-::res://PrimerNivel/::1730839281
-Control.tscn::PackedScene::-1::1726171647::0::1::::<><>::
-Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg::CompressedTexture2D::1041693393901426209::1726171647::1729021591::1::::<><>::
-PrimerNivel.gd::GDScript::-1::1729021335::0::1::::<>Node2D<>::
-PrimerNivel.tscn::PackedScene::5738189616685903302::1730839281::0::1::::<><>::uid://1tkcstjjxi6b::::res://Interfaz.tscn<>res://PrimerNivel/PrimerNivel.gd<>uid://o3usj6ypcra4::::res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg
-::res://Principal/::1732645606
-fondoMain.png::CompressedTexture2D::5160694299387480076::1730836995::1730837878::1::::<><>::
-fondoMain_ok.jpg::CompressedTexture2D::3354155467557223516::1732645096::1732645618::1::::<><>::
-Main.tscn::PackedScene::476398850356379786::1730839281::0::1::::<><>::res://Main.gd<>uid://bkmpdefn6lrym::::res://Assets/Fronts/Kenney Blocks.ttf<>uid://cfr447tx1jy2o::::res://Principal/fondoMain.png
-::res://Resultados/::1730839280
-Conteo.gd::GDScript::-1::1729021335::0::1::::<>Node<>::
-Graficas.gd::GDScript::-1::1728587677::0::1::::<>Node2D<>::
-PantallaGraficas.gd::GDScript::-1::1728587677::0::1::::<>Panel<>::
-PantallaGraficas.tscn::PackedScene::7474780782488336807::1730839280::0::1::::<><>::res://Resultados/PantallaGraficas.gd<>res://Resultados/Graficas.gd
-::res://SegundoNivel/::1730839282
-SegundoNivel.gd::GDScript::-1::1729023265::0::1::::<>Node2D<>::
-SegundoNivel.tscn::PackedScene::2253158832824647942::1730839282::0::1::::<><>::uid://1tkcstjjxi6b::::res://Interfaz.tscn<>uid://o3usj6ypcra4::::res://PrimerNivel/Imagen de WhatsApp 2024-04-04 a las 14.02.03_1cc9d13a.jpg<>res://SegundoNivel/SegundoNivel.gd
-=======
-::res://::1746209398
-::res://Assets/::1745606270
-::res://Assets/Fonts/::1745605850
+::res://::1746565535
+::res://Assets/::1746418467
+::res://Assets/Fonts/::1746418467
 BungeeTint-Regular.ttf::FontFile::3610945890772332296::1728518193::1742583451::1::::<><>::
 Kenney Blocks.ttf::FontFile::7730863094965624285::1728518193::1742583451::1::::<><>::
 SMILE KINDS.ttf::FontFile::5814227744137407969::1728518193::1742583451::1::::<><>::
 Xolonium-Bold.ttf::FontFile::8042755915628105682::1728518193::1745605850::1::::<><>::
-::res://Assets/Mundo/::1742586031
+::res://Assets/Mundo/::1746418467
 Mundo.jpg::CompressedTexture2D::7047000962667809092::1726164950::1742586031::1::::<><>::
-::res://Assets/PantallaDeInicio/::1742584309
+::res://Assets/PantallaDeInicio/::1746418467
 fondoMain.png::CompressedTexture2D::1962093735076047703::1742581747::1742584309::1::::<><>::
-::res://Assets/PantallaDeMuerte/::1745606329
+::res://Assets/PantallaDeMuerte/::1746418467
 PantallaDeMuerte.PNG::CompressedTexture2D::2463688266797652514::1742584809::1745606329::1::::<><>::
-::res://Assets/Polillas/::1745600564
+::res://Assets/Polillas/::1746418467
 B1.png::CompressedTexture2D::7138378922058950207::1745600563::1745600564::1::::<><>::
 B2.png::CompressedTexture2D::6979832612174794592::1745600563::1745600564::1::::<><>::
 B3.png::CompressedTexture2D::3973038523279258478::1745600563::1745600564::1::::<><>::
-::res://Assets/Polillas/Claras/::1742581289
+::res://Assets/Polillas/Claras/::1746418467
 p1.png::CompressedTexture2D::6166856440824642998::1726164942::1742581289::1::::<><>::
 p2.png::CompressedTexture2D::6237042467779802235::1726164942::1742581289::1::::<><>::
 P3.png::CompressedTexture2D::8385650212286285065::1726164942::1742581289::1::::<><>::
-::res://Assets/Polillas/Melanicas/::1742581289
+::res://Assets/Polillas/Melanicas/::1746418467
 B1.png::CompressedTexture2D::2257709509920817651::1706643928::1742581289::1::::<><>::
 B2.png::CompressedTexture2D::6525917160609773010::1706643921::1742581289::1::::<><>::
 B3.png::CompressedTexture2D::5753650060826189775::1706643915::1742581289::1::::<><>::
-::res://ManejadorDeCarga/::1745877618
-LoadManager.gd::GDScript::-1::1745877618::0::1::::<>Node<>::
-::res://ManejadorDeCarga/PantallaDeCarga/::1745877705
-loading_screen.gd::GDScript::-1::1745877705::0::1::::<>CanvasLayer<>::
-loading_screen.tscn::PackedScene::3887291232460662934::1745877705::0::1::::<><>::uid://27pnrdvqc1hr::::res://Assets/PantallaDeInicio/fondoMain.png<>res://ManejadorDeCarga/PantallaDeCarga/loading_screen.gd<>uid://co3pqmt7thqhl::::res://Assets/Fonts/SMILE KINDS.ttf
-::res://Mundo/::1745606014
-::res://Mundo/Niveles/::1745877705
+::res://ManejadorDeCarga/::1746418467
+LoadManager.gd::GDScript::-1::1746216355::0::1::::<>Node<>::
+::res://ManejadorDeCarga/PantallaDeCarga/::1746556183
+loading_screen.gd::GDScript::-1::1746556153::0::1::::<>CanvasLayer<>::
+loading_screen.tscn::PackedScene::3887291232460662934::1746556183::0::1::::<><>::uid://27pnrdvqc1hr::::res://Assets/PantallaDeInicio/fondoMain.png<>res://ManejadorDeCarga/PantallaDeCarga/loading_screen.gd<>uid://co3pqmt7thqhl::::res://Assets/Fonts/SMILE KINDS.ttf
+::res://Mundo/::1746418467
+::res://Mundo/Niveles/::1746556183
 Conteo.gd::GDScript::-1::1742857012::0::1::::<>Node<>::
-niveles.gd::GDScript::-1::1745609479::0::1::::<>Node2D<>::
-Niveles.tscn::PackedScene::1047692721623958528::1745877705::0::1::::<><>::uid://1tkcstjjxi6b::::res://Mundo/Niveles/Interfaz/Interfaz.tscn<>res://Mundo/Niveles/niveles.gd<>uid://c7nvcuf6ty2ce::::res://Assets/Mundo/Mundo.jpg<>uid://bbdot6gqbk83g::::res://Assets/PantallaDeMuerte/PantallaDeMuerte.PNG
-::res://Mundo/Niveles/Interfaz/::1745877705
+niveles.gd::GDScript::-1::1746216355::0::1::::<>Node2D<>::
+Niveles.tscn::PackedScene::1047692721623958528::1746556183::0::1::::<><>::uid://1tkcstjjxi6b::::res://Mundo/Niveles/Interfaz/Interfaz.tscn<>res://Mundo/Niveles/niveles.gd<>uid://c7nvcuf6ty2ce::::res://Assets/Mundo/Mundo.jpg
+::res://Mundo/Niveles/Interfaz/::1746556183
 interfaz.gd::GDScript::-1::1742590109::0::1::::<>MarginContainer<>::
-Interfaz.tscn::PackedScene::1864744828624898791::1745877705::0::1::::<><>::uid://die5gkwaafd6l::::res://Assets/Fonts/Kenney Blocks.ttf
-::res://Mundo/PantallaDeMuerte/::1745877705
+Interfaz.tscn::PackedScene::1864744828624898791::1746556183::0::1::::<><>::uid://die5gkwaafd6l::::res://Assets/Fonts/Kenney Blocks.ttf
+::res://Mundo/PantallaDeMuerte/::1746556183
 PantallaDeMuerte.gd::GDScript::-1::1745607025::0::1::::<>Node2D<>::
-PantallaDeMuerte.tscn::PackedScene::8984841602188617105::1745877705::0::1::::<><>::uid://bbdot6gqbk83g::::res://Assets/PantallaDeMuerte/PantallaDeMuerte.PNG
-::res://Mundo/PantallaInicio/::1745877705
+PantallaDeMuerte.tscn::PackedScene::8984841602188617105::1746556183::0::1::::<><>::uid://bbdot6gqbk83g::::res://Assets/PantallaDeMuerte/PantallaDeMuerte.PNG
+::res://Mundo/PantallaInicio/::1746556183
 pantalla_inicio.gd::GDScript::-1::1742858200::0::1::::<>Node2D<>::
-pantalla_inicio.tscn::PackedScene::3056106350366140411::1745877705::0::1::::<><>::res://Mundo/PantallaInicio/pantalla_inicio.gd<>uid://27pnrdvqc1hr::::res://Assets/PantallaDeInicio/fondoMain.png<>uid://co3pqmt7thqhl::::res://Assets/Fonts/SMILE KINDS.ttf
-::res://Mundo/polillas/::1742857170
-::res://Mundo/polillas/Claras/::1745877705
-ClarasA.tscn::PackedScene::7874811855175036681::1745877705::0::1::::<><>::res://Mundo/polillas/Claras/claras_a.gd<>uid://ct4jhvvlstuh7::::res://Assets/Polillas/Claras/p1.png<>uid://cu4jgcaapdyl4::::res://Assets/Polillas/Claras/p2.png<>uid://drqco0rsx7l4t::::res://Assets/Polillas/Claras/P3.png
+pantalla_inicio.tscn::PackedScene::3056106350366140411::1746556183::0::1::::<><>::res://Mundo/PantallaInicio/pantalla_inicio.gd<>uid://27pnrdvqc1hr::::res://Assets/PantallaDeInicio/fondoMain.png<>uid://co3pqmt7thqhl::::res://Assets/Fonts/SMILE KINDS.ttf
+::res://Mundo/polillas/::1746418467
+::res://Mundo/polillas/Claras/::1746556183
+ClarasA.tscn::PackedScene::7874811855175036681::1746556183::0::1::::<><>::res://Mundo/polillas/Claras/claras_a.gd<>uid://ct4jhvvlstuh7::::res://Assets/Polillas/Claras/p1.png<>uid://cu4jgcaapdyl4::::res://Assets/Polillas/Claras/p2.png<>uid://drqco0rsx7l4t::::res://Assets/Polillas/Claras/P3.png
 claras_a.gd::GDScript::-1::1745605412::0::1::::<>Node2D<>::
-::res://Mundo/polillas/MelanicasA/::1745877705
-MelanicasA.tscn::PackedScene::8358883641598158454::1745877705::0::1::::<><>::uid://7fwe7rpt5rot::::res://Assets/Polillas/Melanicas/B1.png<>res://Mundo/polillas/MelanicasA/melanicas_a.gd<>uid://cy8g5w6synmyk::::res://Assets/Polillas/Melanicas/B2.png<>uid://cn8d1m6knw7nv::::res://Assets/Polillas/Melanicas/B3.png
+::res://Mundo/polillas/MelanicasA/::1746556183
+MelanicasA.tscn::PackedScene::8358883641598158454::1746556183::0::1::::<><>::uid://7fwe7rpt5rot::::res://Assets/Polillas/Melanicas/B1.png<>res://Mundo/polillas/MelanicasA/melanicas_a.gd<>uid://cy8g5w6synmyk::::res://Assets/Polillas/Melanicas/B2.png<>uid://cn8d1m6knw7nv::::res://Assets/Polillas/Melanicas/B3.png
 melanicas_a.gd::GDScript::-1::1745605738::0::1::::<>Node2D<>::
-::res://Mundo/Puntuación/::1745877705
+::res://Mundo/Puntuación/::1746556183
 Graficas.gd::GDScript::-1::1745605864::0::1::::<>Node2D<>::
 PantallaGraficas.gd::GDScript::-1::1745605721::0::1::::<>Panel<>::
-PantallaGraficas.tscn::PackedScene::7474780782488336807::1745877705::0::1::::<><>::res://Mundo/Puntuación/PantallaGraficas.gd<>res://Mundo/Puntuación/Graficas.gd
->>>>>>> Stashed changes
+PantallaGraficas.tscn::PackedScene::7474780782488336807::1746556183::0::1::::<><>::res://Mundo/Puntuación/PantallaGraficas.gd<>res://Mundo/Puntuación/Graficas.gd
