@@ -49,11 +49,6 @@ var rng = RandomNumberGenerator.new()
 
 #Despliegue de la pantalla inicial
 func _ready():
-<<<<<<< Updated upstream:Seleccion Natural/PrimerNivel/PrimerNivel.gd
-	#OS.center_window()
-=======
-	await Signal()
->>>>>>> Stashed changes:Seleccion Natural/Mundo/Niveles/niveles.gd
 	iniciar_nivel()
 	var anim_player = $AnimationPlayer
 	remove_child(anim_player)
@@ -76,14 +71,12 @@ func iniciar_nivel():
 	#Asignar el tiemp respectivamente a cada nivel
 	time_mundo = tiempo_por_nivel
 	
-<<<<<<< Updated upstream:Seleccion Natural/PrimerNivel/PrimerNivel.gd
 	"""
 	Nota: Para poder saber sobre que nivel estamos,
 	podemos hacer que en el respectivo fondo de la escena
 	aparezca un letrero indicando en que nivel nos encontramos.
 	"""
 	#Contador de polillas atrapadas al iniciar el nivel
-=======
 #Funcion para ajustar el número de polillas en función del límite
 func tope(total_polillas):
 	#Conversión de los datos en formato float
@@ -97,7 +90,6 @@ func tope(total_polillas):
 		var p_melanicas= (c_melanicas/t_polillas)
 		Conteo.G_claras = p_claras*200
 		Conteo.G_melanicas = p_melanicas*200
->>>>>>> Stashed changes:Seleccion Natural/Mundo/Niveles/niveles.gd
 
 
 #Función que lleva el control de la generación de las polillas
@@ -148,7 +140,6 @@ func _on_Timer_timeout():
 	get_node("MarginContainer/VBoxContainer/Tiempo").text = "Tiempo: " + str(time_mundo)
 	get_node("MarginContainer/VBoxContainer2/Nivel").text = "Nivel: 1"
 	if time_mundo == 0:
-<<<<<<< Updated upstream:Seleccion Natural/PrimerNivel/PrimerNivel.gd
 		"""
 		En un principio aquí usabamos a función:
 		get_tree().quit()
@@ -171,13 +162,12 @@ func _on_MelanicasA_pressed():
 	Conteo.G_melanicas += 1
 	Conteo.Melanicas_sobrevivientes -= 1
 	get_node("MarginContainer/VBoxContainer/Mel").text = "MELANICAS: " + str(Conteo.G_melanicas)
-=======
-		get_node("MarginContainer/VBoxContainer/Tiempo").text = "Tiempo: 0"
-		if Conteo.Consumidas >  Conteo.Limite :
-			Conteo.Limite *=2
-			LoadManager.load_scene("res://Mundo/Puntuación/PantallaGraficas.tscn")
-		else:
-			_PantallaDeMuerte(PantallaDeMuerte)
+	get_node("MarginContainer/VBoxContainer/Tiempo").text = "Tiempo: 0"
+	if Conteo.Consumidas >  Conteo.Limite :
+		Conteo.Limite *=2
+		LoadManager.load_scene("res://Mundo/Puntuación/PantallaGraficas.tscn")
+	else:
+		_PantallaDeMuerte(PantallaDeMuerte)
 			
 func _PantallaDeMuerte(death_scene):
 	var pantallaMuerte = death_scene.instantiate()
@@ -199,7 +189,7 @@ func _on_Melanicas_pressed():
 	puntaje_melanicas += 1
 	Conteo.Consumidas += 1
 	get_node("MarginContainer/VBoxContainer/Mel").text = "MELANICAS: " + str(puntaje_melanicas)
->>>>>>> Stashed changes:Seleccion Natural/Mundo/Niveles/niveles.gd
+	
 
 func _draw():
 	for i in range(6):

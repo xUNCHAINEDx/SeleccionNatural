@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<<< Updated upstream:Seleccion Natural/Principal/fondoMain_ok.jpg.import
-uid="uid://bn11pk1suq6oe"
-path="res://.godot/imported/fondoMain_ok.jpg-af5b5593e7fa36adfa3f2718e1d83d5f.ctex"
-========
-uid="uid://c6pc282gsuaey"
+uid="uid://cbjxk76dyrk7n"
 path="res://.godot/imported/B2.png-055d87173119f31a59e43a0735fc5be1.ctex"
->>>>>>>> Stashed changes:Seleccion Natural/Assets/Polillas/B2.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< Updated upstream:Seleccion Natural/Principal/fondoMain_ok.jpg.import
-source_file="res://Principal/fondoMain_ok.jpg"
-dest_files=["res://.godot/imported/fondoMain_ok.jpg-af5b5593e7fa36adfa3f2718e1d83d5f.ctex"]
-========
 source_file="res://Assets/Polillas/B2.png"
 dest_files=["res://.godot/imported/B2.png-055d87173119f31a59e43a0735fc5be1.ctex"]
->>>>>>>> Stashed changes:Seleccion Natural/Assets/Polillas/B2.png.import
 
 [params]
 
