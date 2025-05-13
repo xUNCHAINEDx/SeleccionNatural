@@ -6,7 +6,7 @@ var melanicas = Conteo.G_melanicas
 
 var puntaje_claras = 0
 var puntaje_melanicas = 0
-var limite = 200
+var limite = 60
 
 #DELIMITACIÓN DE LOS NIVELES
 #var nivel = 1

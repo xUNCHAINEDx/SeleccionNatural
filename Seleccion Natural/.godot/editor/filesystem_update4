@@ -1,4 +1,4 @@
 res://default_env.tres
-res://Resultados/PantallaGraficas.tscn
 res://Principal/Main.tscn
-res://Resultados/PantallaGraficas.gd
+res://Resultados/PantallaGraficas.tscn
+res://PrimerNivel/PrimerNivel.gd
