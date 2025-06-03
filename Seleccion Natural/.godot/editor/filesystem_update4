@@ -1,4 +1,5 @@
 res://default_env.tres
-res://Principal/Main.tscn
 res://Resultados/PantallaGraficas.tscn
-res://PrimerNivel/PrimerNivel.gd
+res://Main.gd
+res://Principal/Main.tscn
+res://pantallaDeCarga/loading_screen.tscn
